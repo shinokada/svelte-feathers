@@ -1,7 +1,8 @@
 ## Svelte-Feathericons
 
 [![npm version](https://badgen.net/npm/v/@codewithshin/svelte-feathericons)](https://www.npmjs.com/package/@codewithshin/svelte-feathericons)
-[![npm downloads](https://badgen.net/npm/dm/@codewithshin/svelte-feathericons)](https://www.npmjs.com/package/@codewithshin/svelte-feathericons)
+[![npm downloads](https://badgen.net/npm/dw/@codewithshin/svelte-feathericons)](https://www.npmjs.com/package/@codewithshin/svelte-feathericons)
+[![license](https://badgen.net/npm/license/@codewithshin/svelte-feathericons)](https://github.com/shinokada/svelte-feathericons/blob/main/LICENSE)
 
 #### What is svelte-feathericons?
 
