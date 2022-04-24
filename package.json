@@ -1,6 +1,15 @@
 {
-  "name": "svelte-feathericons",
+  "name": "@codewithshin/svelte-feathericons",
   "version": "0.1.1",
+  "description": "Svelte + TailwindCSS + Feathericon components",
+  "author": {
+    "name": "Shinichi Okada",
+    "email": "connect@codewithshin.com",
+    "url": "https://blog.codewithshin.com"
+  },
+	"bugs": "https://github.com/shinokada/svelte-feathericons/issues",
+  "homepage": "https://github.com/shinokada/svelte-feathericons",
+	"license": "MIT",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
@@ -13,5 +22,15 @@
     "@sveltejs/kit": "next",
     "svelte": "^3.44.0"
   },
-  "type": "module"
+  "type": "module",
+	"keywords": [
+    "svelte",
+    "sveltekit",
+    "feathericons",
+    "icons"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shinokada/svelte-feathericons"
+  }
 }
