@@ -38,3 +38,7 @@ import * as Icon from '@codewithshin/svelte-feathericons';
 
 <Icon.UnlockIcon color="#6dff6b" size="24" />
 ```
+
+## Icon list
+
+Please see this [Icon list](https://github.com/shinokada/svelte-feathericons/blob/main/icon-list.md)
