@@ -1,287 +1,291 @@
-ActivityIcon.svelte
-AirplayIcon.svelte
-AlertCircleIcon.svelte
-AlertOctagonIcon.svelte
-AlertTriangleIcon.svelte
-AlignCenterIcon.svelte
-AlignJustifyIcon.svelte
-AlignLeftIcon.svelte
-AlignRightIcon.svelte
-AnchorIcon.svelte
-ApertureIcon.svelte
-ArchiveIcon.svelte
-ArrowDownCircleIcon.svelte
-ArrowDownIcon.svelte
-ArrowDownLeftIcon.svelte
-ArrowDownRightIcon.svelte
-ArrowLeftCircleIcon.svelte
-ArrowLeftIcon.svelte
-ArrowRightCircleIcon.svelte
-ArrowRightIcon.svelte
-ArrowUpCircleIcon.svelte
-ArrowUpIcon.svelte
-ArrowUpLeftIcon.svelte
-ArrowUpRightIcon.svelte
-AtSignIcon.svelte
-AwardIcon.svelte
-BarChart2Icon.svelte
-BarChartIcon.svelte
-BatteryChargingIcon.svelte
-BatteryIcon.svelte
-BellIcon.svelte
-BellOffIcon.svelte
-BluetoothIcon.svelte
-BoldIcon.svelte
-BookIcon.svelte
-BookOpenIcon.svelte
-BookmarkIcon.svelte
-BoxIcon.svelte
-BriefcaseIcon.svelte
-CalendarIcon.svelte
-CameraIcon.svelte
-CameraOffIcon.svelte
-CastIcon.svelte
-CheckCircleIcon.svelte
-CheckIcon.svelte
-CheckSquareIcon.svelte
-ChevronDownIcon.svelte
-ChevronLeftIcon.svelte
-ChevronRightIcon.svelte
-ChevronUpIcon.svelte
-ChevronsDownIcon.svelte
-ChevronsLeftIcon.svelte
-ChevronsRightIcon.svelte
-ChevronsUpIcon.svelte
-ChromeIcon.svelte
-CircleIcon.svelte
-ClipboardIcon.svelte
-ClockIcon.svelte
-CloudDrizzleIcon.svelte
-CloudIcon.svelte
-CloudLightningIcon.svelte
-CloudOffIcon.svelte
-CloudRainIcon.svelte
-CloudSnowIcon.svelte
-CodeIcon.svelte
-CodepenIcon.svelte
-CodesandboxIcon.svelte
-CoffeeIcon.svelte
-ColumnsIcon.svelte
-CommandIcon.svelte
-CompassIcon.svelte
-CopyIcon.svelte
-CornerDownLeftIcon.svelte
-CornerDownRightIcon.svelte
-CornerLeftDownIcon.svelte
-CornerLeftUpIcon.svelte
-CornerRightDownIcon.svelte
-CornerRightUpIcon.svelte
-CornerUpLeftIcon.svelte
-CornerUpRightIcon.svelte
-CpuIcon.svelte
-CreditCardIcon.svelte
-CropIcon.svelte
-CrosshairIcon.svelte
-DatabaseIcon.svelte
-DeleteIcon.svelte
-DiscIcon.svelte
-DivideCircleIcon.svelte
-DivideIcon.svelte
-DivideSquareIcon.svelte
-DollarSignIcon.svelte
-DownloadCloudIcon.svelte
-DownloadIcon.svelte
-DribbbleIcon.svelte
-DropletIcon.svelte
-Edit2Icon.svelte
-Edit3Icon.svelte
-EditIcon.svelte
-ExternalLinkIcon.svelte
-EyeIcon.svelte
-EyeOffIcon.svelte
-FacebookIcon.svelte
-FastForwardIcon.svelte
-FeatherIcon.svelte
-FigmaIcon.svelte
-FileIcon.svelte
-FileMinusIcon.svelte
-FilePlusIcon.svelte
-FileTextIcon.svelte
-FilmIcon.svelte
-FilterIcon.svelte
-FlagIcon.svelte
-FolderIcon.svelte
-FolderMinusIcon.svelte
-FolderPlusIcon.svelte
-FramerIcon.svelte
-FrownIcon.svelte
-GiftIcon.svelte
-GitBranchIcon.svelte
-GitCommitIcon.svelte
-GitMergeIcon.svelte
-GitPullRequestIcon.svelte
-GithubIcon.svelte
-GitlabIcon.svelte
-GlobeIcon.svelte
-GridIcon.svelte
-HardDriveIcon.svelte
-HashIcon.svelte
-HeadphonesIcon.svelte
-HeartIcon.svelte
-HelpCircleIcon.svelte
-HexagonIcon.svelte
-HomeIcon.svelte
-ImageIcon.svelte
-InboxIcon.svelte
-InfoIcon.svelte
-InstagramIcon.svelte
-ItalicIcon.svelte
-KeyIcon.svelte
-LayersIcon.svelte
-LayoutIcon.svelte
-LifeBuoyIcon.svelte
-Link2Icon.svelte
-LinkIcon.svelte
-LinkedinIcon.svelte
-ListIcon.svelte
-LoaderIcon.svelte
-LockIcon.svelte
-LogInIcon.svelte
-LogOutIcon.svelte
-MailIcon.svelte
-MapIcon.svelte
-MapPinIcon.svelte
-Maximize2Icon.svelte
-MaximizeIcon.svelte
-MehIcon.svelte
-MenuIcon.svelte
-MessageCircleIcon.svelte
-MessageSquareIcon.svelte
-MicIcon.svelte
-MicOffIcon.svelte
-Minimize2Icon.svelte
-MinimizeIcon.svelte
-MinusCircleIcon.svelte
-MinusIcon.svelte
-MinusSquareIcon.svelte
-MonitorIcon.svelte
-MoonIcon.svelte
-MoreHorizontalIcon.svelte
-MoreVerticalIcon.svelte
-MousePointerIcon.svelte
-MoveIcon.svelte
-MusicIcon.svelte
-Navigation2Icon.svelte
-NavigationIcon.svelte
-OctagonIcon.svelte
-PackageIcon.svelte
-PaperclipIcon.svelte
-PauseCircleIcon.svelte
-PauseIcon.svelte
-PenToolIcon.svelte
-PercentIcon.svelte
-PhoneCallIcon.svelte
-PhoneForwardedIcon.svelte
-PhoneIcon.svelte
-PhoneIncomingIcon.svelte
-PhoneMissedIcon.svelte
-PhoneOffIcon.svelte
-PhoneOutgoingIcon.svelte
-PieChartIcon.svelte
-PlayCircleIcon.svelte
-PlayIcon.svelte
-PlusCircleIcon.svelte
-PlusIcon.svelte
-PlusSquareIcon.svelte
-PocketIcon.svelte
-PowerIcon.svelte
-PrinterIcon.svelte
-RadioIcon.svelte
-RefreshCcwIcon.svelte
-RefreshCwIcon.svelte
-RepeatIcon.svelte
-RewindIcon.svelte
-RotateCcwIcon.svelte
-RotateCwIcon.svelte
-RssIcon.svelte
-SaveIcon.svelte
-ScissorsIcon.svelte
-SearchIcon.svelte
-SendIcon.svelte
-ServerIcon.svelte
-SettingsIcon.svelte
-Share2Icon.svelte
-ShareIcon.svelte
-ShieldIcon.svelte
-ShieldOffIcon.svelte
-ShoppingBagIcon.svelte
-ShoppingCartIcon.svelte
-ShuffleIcon.svelte
-SidebarIcon.svelte
-SkipBackIcon.svelte
-SkipForwardIcon.svelte
-SlackIcon.svelte
-SlashIcon.svelte
-SlidersIcon.svelte
-SmartphoneIcon.svelte
-SmileIcon.svelte
-SpeakerIcon.svelte
-SquareIcon.svelte
-StarIcon.svelte
-StopCircleIcon.svelte
-SunIcon.svelte
-SunriseIcon.svelte
-SunsetIcon.svelte
-TableIcon.svelte
-TabletIcon.svelte
-TagIcon.svelte
-TargetIcon.svelte
-TerminalIcon.svelte
-ThermometerIcon.svelte
-ThumbsDownIcon.svelte
-ThumbsUpIcon.svelte
-ToggleLeftIcon.svelte
-ToggleRightIcon.svelte
-ToolIcon.svelte
-Trash2Icon.svelte
-TrashIcon.svelte
-TrelloIcon.svelte
-TrendingDownIcon.svelte
-TrendingUpIcon.svelte
-TriangleIcon.svelte
-TruckIcon.svelte
-TvIcon.svelte
-TwitchIcon.svelte
-TwitterIcon.svelte
-TypeIcon.svelte
-UmbrellaIcon.svelte
-UnderlineIcon.svelte
-UnlockIcon.svelte
-UploadCloudIcon.svelte
-UploadIcon.svelte
-UserCheckIcon.svelte
-UserIcon.svelte
-UserMinusIcon.svelte
-UserPlusIcon.svelte
-UserXIcon.svelte
-UsersIcon.svelte
-VideoIcon.svelte
-VideoOffIcon.svelte
-VoicemailIcon.svelte
-Volume1Icon.svelte
-Volume2Icon.svelte
-VolumeIcon.svelte
-VolumeXIcon.svelte
-WatchIcon.svelte
-WifiIcon.svelte
-WifiOffIcon.svelte
-WindIcon.svelte
-XCircleIcon.svelte
-XIcon.svelte
-XOctagonIcon.svelte
-XSquareIcon.svelte
-YoutubeIcon.svelte
-ZapIcon.svelte
-ZapOffIcon.svelte
-ZoomInIcon.svelte
-ZoomOutIcon.svelte
+# Icon list
+
+| Name of icons               |
+| --------------------------- |
+| ActivityIcon.svelte         |
+| AirplayIcon.svelte          |
+| AlertCircleIcon.svelte      |
+| AlertOctagonIcon.svelte     |
+| AlertTriangleIcon.svelte    |
+| AlignCenterIcon.svelte      |
+| AlignJustifyIcon.svelte     |
+| AlignLeftIcon.svelte        |
+| AlignRightIcon.svelte       |
+| AnchorIcon.svelte           |
+| ApertureIcon.svelte         |
+| ArchiveIcon.svelte          |
+| ArrowDownCircleIcon.svelte  |
+| ArrowDownIcon.svelte        |
+| ArrowDownLeftIcon.svelte    |
+| ArrowDownRightIcon.svelte   |
+| ArrowLeftCircleIcon.svelte  |
+| ArrowLeftIcon.svelte        |
+| ArrowRightCircleIcon.svelte |
+| ArrowRightIcon.svelte       |
+| ArrowUpCircleIcon.svelte    |
+| ArrowUpIcon.svelte          |
+| ArrowUpLeftIcon.svelte      |
+| ArrowUpRightIcon.svelte     |
+| AtSignIcon.svelte           |
+| AwardIcon.svelte            |
+| BarChart2Icon.svelte        |
+| BarChartIcon.svelte         |
+| BatteryChargingIcon.svelte  |
+| BatteryIcon.svelte          |
+| BellIcon.svelte             |
+| BellOffIcon.svelte          |
+| BluetoothIcon.svelte        |
+| BoldIcon.svelte             |
+| BookIcon.svelte             |
+| BookOpenIcon.svelte         |
+| BookmarkIcon.svelte         |
+| BoxIcon.svelte              |
+| BriefcaseIcon.svelte        |
+| CalendarIcon.svelte         |
+| CameraIcon.svelte           |
+| CameraOffIcon.svelte        |
+| CastIcon.svelte             |
+| CheckCircleIcon.svelte      |
+| CheckIcon.svelte            |
+| CheckSquareIcon.svelte      |
+| ChevronDownIcon.svelte      |
+| ChevronLeftIcon.svelte      |
+| ChevronRightIcon.svelte     |
+| ChevronUpIcon.svelte        |
+| ChevronsDownIcon.svelte     |
+| ChevronsLeftIcon.svelte     |
+| ChevronsRightIcon.svelte    |
+| ChevronsUpIcon.svelte       |
+| ChromeIcon.svelte           |
+| CircleIcon.svelte           |
+| ClipboardIcon.svelte        |
+| ClockIcon.svelte            |
+| CloudDrizzleIcon.svelte     |
+| CloudIcon.svelte            |
+| CloudLightningIcon.svelte   |
+| CloudOffIcon.svelte         |
+| CloudRainIcon.svelte        |
+| CloudSnowIcon.svelte        |
+| CodeIcon.svelte             |
+| CodepenIcon.svelte          |
+| CodesandboxIcon.svelte      |
+| CoffeeIcon.svelte           |
+| ColumnsIcon.svelte          |
+| CommandIcon.svelte          |
+| CompassIcon.svelte          |
+| CopyIcon.svelte             |
+| CornerDownLeftIcon.svelte   |
+| CornerDownRightIcon.svelte  |
+| CornerLeftDownIcon.svelte   |
+| CornerLeftUpIcon.svelte     |
+| CornerRightDownIcon.svelte  |
+| CornerRightUpIcon.svelte    |
+| CornerUpLeftIcon.svelte     |
+| CornerUpRightIcon.svelte    |
+| CpuIcon.svelte              |
+| CreditCardIcon.svelte       |
+| CropIcon.svelte             |
+| CrosshairIcon.svelte        |
+| DatabaseIcon.svelte         |
+| DeleteIcon.svelte           |
+| DiscIcon.svelte             |
+| DivideCircleIcon.svelte     |
+| DivideIcon.svelte           |
+| DivideSquareIcon.svelte     |
+| DollarSignIcon.svelte       |
+| DownloadCloudIcon.svelte    |
+| DownloadIcon.svelte         |
+| DribbbleIcon.svelte         |
+| DropletIcon.svelte          |
+| Edit2Icon.svelte            |
+| Edit3Icon.svelte            |
+| EditIcon.svelte             |
+| ExternalLinkIcon.svelte     |
+| EyeIcon.svelte              |
+| EyeOffIcon.svelte           |
+| FacebookIcon.svelte         |
+| FastForwardIcon.svelte      |
+| FeatherIcon.svelte          |
+| FigmaIcon.svelte            |
+| FileIcon.svelte             |
+| FileMinusIcon.svelte        |
+| FilePlusIcon.svelte         |
+| FileTextIcon.svelte         |
+| FilmIcon.svelte             |
+| FilterIcon.svelte           |
+| FlagIcon.svelte             |
+| FolderIcon.svelte           |
+| FolderMinusIcon.svelte      |
+| FolderPlusIcon.svelte       |
+| FramerIcon.svelte           |
+| FrownIcon.svelte            |
+| GiftIcon.svelte             |
+| GitBranchIcon.svelte        |
+| GitCommitIcon.svelte        |
+| GitMergeIcon.svelte         |
+| GitPullRequestIcon.svelte   |
+| GithubIcon.svelte           |
+| GitlabIcon.svelte           |
+| GlobeIcon.svelte            |
+| GridIcon.svelte             |
+| HardDriveIcon.svelte        |
+| HashIcon.svelte             |
+| HeadphonesIcon.svelte       |
+| HeartIcon.svelte            |
+| HelpCircleIcon.svelte       |
+| HexagonIcon.svelte          |
+| HomeIcon.svelte             |
+| ImageIcon.svelte            |
+| InboxIcon.svelte            |
+| InfoIcon.svelte             |
+| InstagramIcon.svelte        |
+| ItalicIcon.svelte           |
+| KeyIcon.svelte              |
+| LayersIcon.svelte           |
+| LayoutIcon.svelte           |
+| LifeBuoyIcon.svelte         |
+| Link2Icon.svelte            |
+| LinkIcon.svelte             |
+| LinkedinIcon.svelte         |
+| ListIcon.svelte             |
+| LoaderIcon.svelte           |
+| LockIcon.svelte             |
+| LogInIcon.svelte            |
+| LogOutIcon.svelte           |
+| MailIcon.svelte             |
+| MapIcon.svelte              |
+| MapPinIcon.svelte           |
+| Maximize2Icon.svelte        |
+| MaximizeIcon.svelte         |
+| MehIcon.svelte              |
+| MenuIcon.svelte             |
+| MessageCircleIcon.svelte    |
+| MessageSquareIcon.svelte    |
+| MicIcon.svelte              |
+| MicOffIcon.svelte           |
+| Minimize2Icon.svelte        |
+| MinimizeIcon.svelte         |
+| MinusCircleIcon.svelte      |
+| MinusIcon.svelte            |
+| MinusSquareIcon.svelte      |
+| MonitorIcon.svelte          |
+| MoonIcon.svelte             |
+| MoreHorizontalIcon.svelte   |
+| MoreVerticalIcon.svelte     |
+| MousePointerIcon.svelte     |
+| MoveIcon.svelte             |
+| MusicIcon.svelte            |
+| Navigation2Icon.svelte      |
+| NavigationIcon.svelte       |
+| OctagonIcon.svelte          |
+| PackageIcon.svelte          |
+| PaperclipIcon.svelte        |
+| PauseCircleIcon.svelte      |
+| PauseIcon.svelte            |
+| PenToolIcon.svelte          |
+| PercentIcon.svelte          |
+| PhoneCallIcon.svelte        |
+| PhoneForwardedIcon.svelte   |
+| PhoneIcon.svelte            |
+| PhoneIncomingIcon.svelte    |
+| PhoneMissedIcon.svelte      |
+| PhoneOffIcon.svelte         |
+| PhoneOutgoingIcon.svelte    |
+| PieChartIcon.svelte         |
+| PlayCircleIcon.svelte       |
+| PlayIcon.svelte             |
+| PlusCircleIcon.svelte       |
+| PlusIcon.svelte             |
+| PlusSquareIcon.svelte       |
+| PocketIcon.svelte           |
+| PowerIcon.svelte            |
+| PrinterIcon.svelte          |
+| RadioIcon.svelte            |
+| RefreshCcwIcon.svelte       |
+| RefreshCwIcon.svelte        |
+| RepeatIcon.svelte           |
+| RewindIcon.svelte           |
+| RotateCcwIcon.svelte        |
+| RotateCwIcon.svelte         |
+| RssIcon.svelte              |
+| SaveIcon.svelte             |
+| ScissorsIcon.svelte         |
+| SearchIcon.svelte           |
+| SendIcon.svelte             |
+| ServerIcon.svelte           |
+| SettingsIcon.svelte         |
+| Share2Icon.svelte           |
+| ShareIcon.svelte            |
+| ShieldIcon.svelte           |
+| ShieldOffIcon.svelte        |
+| ShoppingBagIcon.svelte      |
+| ShoppingCartIcon.svelte     |
+| ShuffleIcon.svelte          |
+| SidebarIcon.svelte          |
+| SkipBackIcon.svelte         |
+| SkipForwardIcon.svelte      |
+| SlackIcon.svelte            |
+| SlashIcon.svelte            |
+| SlidersIcon.svelte          |
+| SmartphoneIcon.svelte       |
+| SmileIcon.svelte            |
+| SpeakerIcon.svelte          |
+| SquareIcon.svelte           |
+| StarIcon.svelte             |
+| StopCircleIcon.svelte       |
+| SunIcon.svelte              |
+| SunriseIcon.svelte          |
+| SunsetIcon.svelte           |
+| TableIcon.svelte            |
+| TabletIcon.svelte           |
+| TagIcon.svelte              |
+| TargetIcon.svelte           |
+| TerminalIcon.svelte         |
+| ThermometerIcon.svelte      |
+| ThumbsDownIcon.svelte       |
+| ThumbsUpIcon.svelte         |
+| ToggleLeftIcon.svelte       |
+| ToggleRightIcon.svelte      |
+| ToolIcon.svelte             |
+| Trash2Icon.svelte           |
+| TrashIcon.svelte            |
+| TrelloIcon.svelte           |
+| TrendingDownIcon.svelte     |
+| TrendingUpIcon.svelte       |
+| TriangleIcon.svelte         |
+| TruckIcon.svelte            |
+| TvIcon.svelte               |
+| TwitchIcon.svelte           |
+| TwitterIcon.svelte          |
+| TypeIcon.svelte             |
+| UmbrellaIcon.svelte         |
+| UnderlineIcon.svelte        |
+| UnlockIcon.svelte           |
+| UploadCloudIcon.svelte      |
+| UploadIcon.svelte           |
+| UserCheckIcon.svelte        |
+| UserIcon.svelte             |
+| UserMinusIcon.svelte        |
+| UserPlusIcon.svelte         |
+| UserXIcon.svelte            |
+| UsersIcon.svelte            |
+| VideoIcon.svelte            |
+| VideoOffIcon.svelte         |
+| VoicemailIcon.svelte        |
+| Volume1Icon.svelte          |
+| Volume2Icon.svelte          |
+| VolumeIcon.svelte           |
+| VolumeXIcon.svelte          |
+| WatchIcon.svelte            |
+| WifiIcon.svelte             |
+| WifiOffIcon.svelte          |
+| WindIcon.svelte             |
+| XCircleIcon.svelte          |
+| XIcon.svelte                |
+| XOctagonIcon.svelte         |
+| XSquareIcon.svelte          |
+| YoutubeIcon.svelte          |
+| ZapIcon.svelte              |
+| ZapOffIcon.svelte           |
+| ZoomInIcon.svelte           |
+| ZoomOutIcon.svelte          |
