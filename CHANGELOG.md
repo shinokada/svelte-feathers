@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.7](https://github.com/shinokada/svelte-feathericons/compare/v0.1.6...v0.1.7) (2022-04-24)
+
+
+### Bug Fixes
+
+* add [@codewithshin](https://github.com/codewithshin) in package.json name ([ec5fbc7](https://github.com/shinokada/svelte-feathericons/commit/ec5fbc72cdfa7d43989412f7f3d0c9561d202878))
+
 ### [0.1.6](https://github.com/shinokada/svelte-feathericons/compare/v0.1.5...v0.1.6) (2022-04-24)
 
 
