@@ -1,6 +1,6 @@
 {
   "name": "@codewithshin/svelte-feathericons",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Svelte + TailwindCSS + Feathericon components",
   "author": {
     "name": "Shinichi Okada",

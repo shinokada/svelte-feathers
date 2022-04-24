@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/shinokada/svelte-feathericons/compare/v0.1.2...v0.1.3) (2022-04-24)
+
+
+### Bug Fixes
+
+* add svelte2tsx and typescript ([f20846f](https://github.com/shinokada/svelte-feathericons/commit/f20846ffdbdf34abe5a2fe8be61d7b3108ad8d58))
+
 ### [0.1.2](https://github.com/shinokada/svelte-feathericons/compare/v0.1.1...v0.1.2) (2022-04-24)
 
 
