@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.5](https://github.com/shinokada/svelte-feathericons/compare/v0.1.4...v0.1.5) (2022-04-24)
+
+
+### Features
+
+* add tsconfig.json ([945d17c](https://github.com/shinokada/svelte-feathericons/commit/945d17c1955bdde405457f2af78c24419dc817db))
+
 ### [0.1.4](https://github.com/shinokada/svelte-feathericons/compare/v0.1.3...v0.1.4) (2022-04-24)
 
 ### [0.1.3](https://github.com/shinokada/svelte-feathericons/compare/v0.1.2...v0.1.3) (2022-04-24)
