@@ -1,5 +1,5 @@
 {
-  "name": "@codewithshin/svelte-feathericons",
+  "name": "svelte-feathericons",
   "version": "0.1.5",
   "description": "Svelte + TailwindCSS + Feathericon components",
   "author": {
