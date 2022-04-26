@@ -1,4 +1,4 @@
-<script>export let size="24"; export let color="currentColor";</script><svg {...$$restProps}
+<script>export let size="24"; export let color="currentColor";</script><svg
   width={size}
   height={size}
   viewBox="0 0 24 24"
@@ -7,7 +7,7 @@
   stroke={color}
   stroke-width="2"
   stroke-linecap="round"
-  stroke-linejoin="round"
+  stroke-linejoin="round" class={$$props.class}
 >
   <path d="M9 18V5l12-2v13" />
   <circle cx="6" cy="18" r="3" />

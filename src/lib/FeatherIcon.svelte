@@ -1,4 +1,4 @@
-<script>export let size="24"; export let color="currentColor";</script><svg {...$$restProps}
+<script>export let size="24"; export let color="currentColor";</script><svg
   xmlns="http://www.w3.org/2000/svg"
   width={size}
   height={size}
@@ -7,7 +7,7 @@
   stroke={color}
   stroke-width="2"
   stroke-linecap="round"
-  stroke-linejoin="round"
+  stroke-linejoin="round" class={$$props.class}
 >
   <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z" />
   <line x1="16" y1="8" x2="2" y2="22" />

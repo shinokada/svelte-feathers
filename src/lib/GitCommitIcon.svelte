@@ -1,4 +1,4 @@
-<script>export let size="24"; export let color="currentColor";</script><svg {...$$restProps}
+<script>export let size="24"; export let color="currentColor";</script><svg
   xmlns="http://www.w3.org/2000/svg"
   width={size}
   height={size}
@@ -7,7 +7,7 @@
   stroke={color}
   stroke-width="2"
   stroke-linecap="round"
-  stroke-linejoin="round"
+  stroke-linejoin="round" class={$$props.class}
 >
   <circle cx="12" cy="12" r="4" />
   <line x1="1.05" y1="12" x2="7" y2="12" />

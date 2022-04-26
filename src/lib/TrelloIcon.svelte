@@ -1,4 +1,4 @@
-<script>export let size="24"; export let color="currentColor";</script><svg {...$$restProps}
+<script>export let size="24"; export let color="currentColor";</script><svg
   viewBox="0 0 24 24"
   width={size}
   height={size}
@@ -7,7 +7,7 @@
   stroke={color}
   stroke-width="2"
   stroke-linecap="round"
-  stroke-linejoin="round"
+  stroke-linejoin="round" class={$$props.class}
 >
   <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
   <rect x="7" y="7" width="3" height="9" />

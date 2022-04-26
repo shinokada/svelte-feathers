@@ -1,4 +1,4 @@
-<script>export let size="24"; export let color="currentColor";</script><svg {...$$restProps}
+<script>export let size="24"; export let color="currentColor";</script><svg
   xmlns="http://www.w3.org/2000/svg"
   width={size}
   height={size}
@@ -7,7 +7,7 @@
   stroke={color}
   stroke-width="2"
   stroke-linecap="round"
-  stroke-linejoin="round"
+  stroke-linejoin="round" class={$$props.class}
 >
   <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2" />
   <line x1="12" y1="22" x2="12" y2="15.5" />

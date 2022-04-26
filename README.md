@@ -28,6 +28,8 @@ import { ActivityIcon, AirplayIcon } from '@codewithshin/svelte-feathericons';
 <AirplayIcon color="#23deff" size="36" />
 ```
 
+[REPL](https://svelte.dev/repl/1fe15642604f48b38e2ea67ead9818dc?version=3.47.0)
+
 You can also include the whole icon pack:
 
 ```html
@@ -37,6 +39,8 @@ import * as Icon from '@codewithshin/svelte-feathericons';
 
 <Icon.UnlockIcon color="#6dff6b" size="24" />
 ```
+
+[REPL](https://svelte.dev/repl/a759c2c6f2f94c0f8a2d07b1889b2faf?version=3.47.0)
 
 ## Icon list
 
