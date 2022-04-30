@@ -1,7 +1,11 @@
-## Svelte-Feathericons
+## Svelte-Feathericons has moved to Svelte-Feathers
+
+[Svelte-Feathers](https://github.com/shinokada/svelte-feathers)
 
 [![npm version](https://badgen.net/npm/v/@codewithshin/svelte-feathericons)](https://www.npmjs.com/package/@codewithshin/svelte-feathericons)
 [![license](https://badgen.net/npm/license/@codewithshin/svelte-feathericons)](https://github.com/shinokada/svelte-feathericons/blob/main/LICENSE)
+
+
 
 #### What is svelte-feathericons?
 
