@@ -1,5 +1,5 @@
 {
-  "name": "@codewithshin/svelte-feathericons",
+  "name": "svelte-feathers",
   "version": "0.1.12",
   "description": "Feathericon components for Sveltejs",
   "author": {
@@ -7,8 +7,8 @@
     "email": "connect@codewithshin.com",
     "url": "https://blog.codewithshin.com"
   },
-  "bugs": "https://github.com/shinokada/svelte-feathericons/issues",
-  "homepage": "https://github.com/shinokada/svelte-feathericons",
+  "bugs": "https://github.com/shinokada/svelte-feathers/issues",
+  "homepage": "https://github.com/shinokada/svelte-feathers",
   "license": "MIT",
   "scripts": {
     "dev": "svelte-kit dev",
@@ -33,6 +33,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/shinokada/svelte-feathericons"
+    "url": "https://github.com/shinokada/svelte-feathers"
   }
 }
