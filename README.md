@@ -2,7 +2,7 @@
 
 [![npm version](https://badgen.net/npm/v/svelte-feathers)](https://www.npmjs.com/package/svelte-feathers)
 [![license](https://badgen.net/npm/license/svelte-feathers)](https://github.com/shinokada/svelte-feathers/blob/main/LICENSE)
-[![license](https://badgen.net/npm/dm/svelte-feathers)](https://github.com/shinokada/svelte-feathers)
+[![downloads](https://badgen.net/npm/dm/svelte-feathers)](https://github.com/shinokada/svelte-feathers)
 
 #### What is svelte-feathers?
 
