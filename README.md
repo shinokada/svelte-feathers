@@ -1,30 +1,27 @@
-## Svelte-Feathericons has moved to Svelte-Feathers
-
-[Svelte-Feathers](https://github.com/shinokada/svelte-feathers)
+## Svelte-Feathers 
 
 [![npm version](https://badgen.net/npm/v/@codewithshin/svelte-feathericons)](https://www.npmjs.com/package/@codewithshin/svelte-feathericons)
 [![license](https://badgen.net/npm/license/@codewithshin/svelte-feathericons)](https://github.com/shinokada/svelte-feathericons/blob/main/LICENSE)
 
+#### What is svelte-feathers?
 
-
-#### What is svelte-feathericons?
-
-svelte-feather is a collection of simply beautiful open source icons for Sveltejs. Each icon is designed on a 24x24 grid with an emphasis on simplicity, consistency and readability.
+svelte-feathers is a collection of simply beautiful open source icons for Sveltejs. Each icon is designed on a 24x24 grid with an emphasis on simplicity, consistency and readability.
 
 #### Based on Feather Icons  ```v4.29.0```
+
 https://feathericons.com/
 
 ### Installation
 
 ```sh
-npm i -D @codewithshin/svelte-feathericons
+npm i -D svelte-feathers
 ```
 
 ### Usage
 
 ```html
 <script>
-import { ActivityIcon, AirplayIcon } from '@codewithshin/svelte-feathericons';
+import { ActivityIcon, AirplayIcon } from 'svelte-feathers';
 </script>
 
 <ActivityIcon color="#c61515" size="12" />
@@ -38,7 +35,7 @@ You can also include the whole icon pack:
 
 ```html
 <script>
-import * as Icon from '@codewithshin/svelte-feathericons';
+import * as Icon from 'svelte-feathers';
 </script>
 
 <Icon.UnlockIcon color="#6dff6b" size="24" />
@@ -48,4 +45,4 @@ import * as Icon from '@codewithshin/svelte-feathericons';
 
 ## Icon list
 
-Please see this [Icon list](https://github.com/shinokada/svelte-feathericons/blob/main/icon-list.md)
+Please see this [Icon list](https://github.com/shinokada/svelte-feathers/blob/main/icon-list.md)
