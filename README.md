@@ -46,3 +46,10 @@ import * as Icon from 'svelte-feathers';
 ## Icon list
 
 Please see this [Icon list](https://github.com/shinokada/svelte-feathers/blob/main/icon-list.md)
+
+## Other icons
+
+- [Svelte-heros](https://github.com/shinokada/svelte-heros)
+- [Svelte-lucide](https://github.com/shinokada/svelte-lucide)
+- [Svlete-simples](https://github.com/shinokada/svelte-simples)
+- [Svelte-feathers](https://github.com/shinokada/svelte-feathers)
