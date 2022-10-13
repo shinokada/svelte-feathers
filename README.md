@@ -4,6 +4,11 @@
 [![license](https://badgen.net/npm/license/svelte-feathers)](https://github.com/shinokada/svelte-feathers/blob/main/LICENSE)
 [![downloads](https://badgen.net/npm/dm/svelte-feathers)](https://github.com/shinokada/svelte-feathers)
 
+<p align="center">
+<img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-feathericons/main/static/images/feather1.webp" />
+<img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-feathericons/main/static/images/feather2.webp" />
+</p>
+
 #### What is svelte-feathers?
 
 - Svelte-Feathers is a collection of simply beautiful open source icons for Sveltejs. 
