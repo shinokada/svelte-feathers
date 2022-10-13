@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.18](https://github.com/shinokada/svelte-feathers/compare/v0.1.17...v0.1.18) (2022-10-13)
+
+
+### Bug Fixes
+
+* image link ([dc4cd40](https://github.com/shinokada/svelte-feathers/commit/dc4cd409a8852037b274f9a74530b9ba89fbe0b0))
+
 ### [0.1.17](https://github.com/shinokada/svelte-feathers/compare/v0.1.16...v0.1.17) (2022-10-13)
 
 
