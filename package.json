@@ -1,6 +1,6 @@
 {
   "name": "svelte-feathers",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "description": "Feathericon components for Sveltejs",
   "author": {
     "name": "Shinichi Okada",
