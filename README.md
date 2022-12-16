@@ -21,7 +21,7 @@ npm i -D svelte-feathers
 
 ## Icon list
 
-Please see this [Icon list](https://github.com/shinokada/svelte-feathers/blob/main/docs/icon-list.md)
+Please see this [Icon list](https://github.com/shinokada/svelte-feathers/blob/main/icon-list.md)
 
 ### Usage
 
