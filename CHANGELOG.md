@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.6](https://github.com/shinokada/svelte-feathers/compare/v0.2.5...v0.2.6) (2022-12-16)
+
+
+### Bug Fixes
+
+* move files from docs to root since npmjs does not show README ([e16050c](https://github.com/shinokada/svelte-feathers/commit/e16050cf6dbd28783b3c7e4ec67060cba813fdde))
+
 ### [0.2.5](https://github.com/shinokada/svelte-feathers/compare/v0.2.4...v0.2.5) (2022-12-15)
 
 
