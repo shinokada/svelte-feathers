@@ -1,7 +1,7 @@
 <h1 align="center">Svelte-Feathers</h1>
 
 <p align="center">
-<a href="https://shinokada.github.io/svelte-feathers/">Svelte-Feathers</a>
+<a href="https://svelte-feathers.codewithshin.com/">Svelte-Feathers</a>
 </p>
 
 <p align="center">
