@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.7](https://github.com/shinokada/svelte-feathers/compare/v0.2.6...v0.2.7) (2022-12-25)
+
+
+### Features
+
+* add search ([6b805dc](https://github.com/shinokada/svelte-feathers/commit/6b805dc73e9e363ad0e20def5ea973511958d3f3))
+
+
+### Bug Fixes
+
+* add search ([2bac0c4](https://github.com/shinokada/svelte-feathers/commit/2bac0c4635105d691f2da2b2feed609ee212839e))
+* update search config ([9c83dcb](https://github.com/shinokada/svelte-feathers/commit/9c83dcb58f1e26b2dd2d60b2b31cc363e2987fec))
+* update search config ([d370ff0](https://github.com/shinokada/svelte-feathers/commit/d370ff072abdc58396944d7388d45acd0f31b13a))
+* url updates ([16f90b2](https://github.com/shinokada/svelte-feathers/commit/16f90b26b0a2303d753dff0fee427db991db5343))
+
 ### [0.2.6](https://github.com/shinokada/svelte-feathers/compare/v0.2.5...v0.2.6) (2022-12-16)
 
 
