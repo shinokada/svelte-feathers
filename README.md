@@ -13,7 +13,7 @@
 
 Svelte-Feathers is a collection of simply beautiful open source icons for Sveltejs. Each icon is designed on a 24x24 grid with an emphasis on simplicity, consistency and readability. All icons support major CSS frameworks.
 
-### Installation
+## Installation new
 
 ```sh
 npm i -D svelte-feathers
@@ -23,7 +23,10 @@ npm i -D svelte-feathers
 
 Please see this [Icon list](https://github.com/shinokada/svelte-feathers/blob/main/icon-list.md)
 
-### Usage
+
+Here is [Icon names](icon-list.md)
+
+## Usage
 
 ```html
 <script>
