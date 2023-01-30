@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.8](https://github.com/shinokada/svelte-feathers/compare/v0.2.7...v0.2.8) (2023-01-30)
+
+
+### Features
+
+* add pwa ([c494177](https://github.com/shinokada/svelte-feathers/commit/c4941770a77ae25b003b036b4a143a656c501165))
+
+
+### Bug Fixes
+
+* icon list link and verion update ([e5c64de](https://github.com/shinokada/svelte-feathers/commit/e5c64de8125a4b8859aa8903c1638d2fcc362969))
+* internal link ([1cb710d](https://github.com/shinokada/svelte-feathers/commit/1cb710d8726ed00e7628cf7a349c9ebf428378a5))
+
 ### [0.2.7](https://github.com/shinokada/svelte-feathers/compare/v0.2.6...v0.2.7) (2022-12-25)
 
 
