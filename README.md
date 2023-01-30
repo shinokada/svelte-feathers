@@ -1,4 +1,4 @@
-<h1 align="center">Svelte-Feathers</h1>
+<h1 align="center">Svelte Feathers</h1>
 
 <p align="center">
 <a href="https://svelte-feathers.codewithshin.com/">Svelte-Feathers</a>
@@ -22,7 +22,7 @@ npm i -D svelte-feathers
 
 ## Icon list
 
-Please see this [Icon names](icon-list.md).
+Please see this [Icon names](/icon-list.md).
 
 ## Usage
 
