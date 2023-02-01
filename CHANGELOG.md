@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.10](https://github.com/shinokada/svelte-feathers/compare/v0.2.9...v0.2.10) (2023-02-01)
+
+
+### Bug Fixes
+
+* badges target, height, and add links to crossOriginLinks ([e400799](https://github.com/shinokada/svelte-feathers/commit/e40079958f8529968581739a5eac712871b4fe3c))
+
 ### [0.2.9](https://github.com/shinokada/svelte-feathers/compare/v0.2.8...v0.2.9) (2023-02-01)
 
 
