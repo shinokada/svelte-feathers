@@ -289,3 +289,8 @@
 | ZapOffIcon.svelte           |
 | ZoomInIcon.svelte           |
 | ZoomOutIcon.svelte          |
+
+
+## Back to Home
+
+[Back to Home](/)

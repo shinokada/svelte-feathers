@@ -14,6 +14,10 @@
 
 Svelte-Feathers is a collection of simply beautiful open source icons for Sveltejs. Each icon is designed on a 24x24 grid with an emphasis on simplicity, consistency and readability. All icons support major CSS frameworks.
 
+<p align="center">
+<img width="650" src="/static/images/feather-optimized.png" />
+</p>
+
 ## Installation new
 
 ```sh
@@ -90,7 +94,7 @@ https://feathericons.com/
 
 - [Svelte-Icon-Sets](https://svelte-svg-icons.vercel.app/)
 
-## Experience lightning-fast browsing and offline access with Our PWA
+## PWA: Fast & Offline
 
 This website can be downloaded and installed on your device for offline access as a Progressive Web App.
 
