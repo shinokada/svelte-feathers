@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/shinokada/svelte-feathers/compare/v0.2.10...v0.3.0) (2023-02-03)
+
+
+### Bug Fixes
+
+* update index.js ([f76f07c](https://github.com/shinokada/svelte-feathers/commit/f76f07c19794a44234889ebc407e9373ec8568ea))
+
 ### [0.2.10](https://github.com/shinokada/svelte-feathers/compare/v0.2.9...v0.2.10) (2023-02-01)
 
 
