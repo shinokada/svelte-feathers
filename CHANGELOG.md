@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.1](https://github.com/shinokada/svelte-feathers/compare/v0.3.1...v0.4.1) (2023-02-22)
+
+
+### Features
+
+* add microsoft webmaster tools meta tag ([39d9939](https://github.com/shinokada/svelte-feathers/commit/39d9939555bd44ec5a868ad1d0c0b94f6d315892))
+
+
+### Bug Fixes
+
+* update index.html ([63f6077](https://github.com/shinokada/svelte-feathers/commit/63f6077b013bed62409139b7ff0b5685084bd11a))
+
 ### [0.3.1](https://github.com/shinokada/svelte-feathers/compare/v0.3.0...v0.3.1) (2023-02-03)
 
 ## [0.3.0](https://github.com/shinokada/svelte-feathers/compare/v0.2.10...v0.3.0) (2023-02-03)
