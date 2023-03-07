@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.2](https://github.com/shinokada/svelte-feathers/compare/v0.5.1...v0.5.2) (2023-03-07)
+
+
+### Bug Fixes
+
+* add write-package-json script ([a6b3035](https://github.com/shinokada/svelte-feathers/commit/a6b303535818ae5e80eba3b830d72d696dcfa18b))
+
 ### [0.5.1](https://github.com/shinokada/svelte-feathers/compare/v0.4.1...v0.5.1) (2023-03-07)
 
 
