@@ -52,7 +52,7 @@ For faster compilation, you can import the icon directly.
   import ActivityIcon from 'svelte-feathers/ActivityIcon.svelte';
 </script>
 
-<Us />
+<ActivityIcon />
 ```
 
 If you are TypeScript user, **this require `"typescript": "^5.0.0"`.**

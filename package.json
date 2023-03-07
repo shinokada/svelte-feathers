@@ -1,73 +1,1222 @@
 {
-	"name": "svelte-feathers",
-	"version": "0.5.1",
-	"description": "Feathericon components for Sveltejs",
-	"author": {
-		"name": "Shinichi Okada",
-		"email": "connect@codewithshin.com",
-		"url": "https://blog.codewithshin.com"
-	},
-	"bugs": "https://github.com/shinokada/svelte-feathers/issues",
-	"homepage": "https://svelte-feathers.codewithshin.com",
-	"license": "MIT",
-	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build && npm run package",
-		"preview": "vite preview",
-		"package": "svelte-kit sync && svelte-package && publint",
-		"prepublishOnly": "npm run package",
-		"test": "playwright test",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"test:unit": "vitest",
-		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"format": "prettier --plugin-search-dir . --write .",
-		"add-exports": "node ./scripts/add-exports-to-package-json.js",
-		"package:publish": "standard-version && git push --follow-tags origin main && npm run package && npm run add-exports && npm run write-package-json && npm publish"
-	},
-	"exports": {
-		".": {
-			"types": "./dist/index.d.ts",
-			"svelte": "./dist/index.js"
-		}
-	},
-	"files": [
-		"dist"
-	],
-	"peerDependencies": {
-		"svelte": "^3.54.0"
-	},
-	"devDependencies": {
-		"@playwright/test": "^1.31.0",
-		"@sveltejs/adapter-auto": "^2.0.0",
-		"@sveltejs/kit": "^1.8.3",
-		"@sveltejs/package": "^2.0.2",
-		"@typescript-eslint/eslint-plugin": "^5.53.0",
-		"@typescript-eslint/parser": "^5.53.0",
-		"eslint": "^8.34.0",
-		"eslint-config-prettier": "^8.6.0",
-		"eslint-plugin-svelte3": "^4.0.0",
-		"prettier": "^2.8.4",
-		"prettier-plugin-svelte": "^2.9.0",
-		"publint": "^0.1.9",
-		"svelte": "^3.55.1",
-		"svelte-check": "^3.0.3",
-		"tslib": "^2.5.0",
-		"typescript": "^4.9.5",
-		"vite": "^4.1.4",
-		"vitest": "^0.25.8"
-	},
-	"svelte": "./dist/index.js",
-	"types": "./dist/index.d.ts",
-	"type": "module",
-	"keywords": [
-		"svelte",
-		"sveltekit",
-		"feathericons",
-		"icons"
-	],
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/shinokada/svelte-feathers"
-	}
+  "name": "svelte-feathers",
+  "version": "0.5.1",
+  "description": "Feathericon components for Sveltejs",
+  "author": {
+    "name": "Shinichi Okada",
+    "email": "connect@codewithshin.com",
+    "url": "https://blog.codewithshin.com"
+  },
+  "bugs": "https://github.com/shinokada/svelte-feathers/issues",
+  "homepage": "https://svelte-feathers.codewithshin.com",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build && npm run package",
+    "preview": "vite preview",
+    "package": "svelte-kit sync && svelte-package && publint",
+    "prepublishOnly": "npm run package",
+    "test": "playwright test",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "test:unit": "vitest",
+    "lint": "prettier --plugin-search-dir . --check . && eslint .",
+    "format": "prettier --plugin-search-dir . --write .",
+		"write-package-json": "node ./scripts/package-json-writer.js",
+    "add-exports": "node ./scripts/add-exports-to-package-json.js",
+    "package:publish": "standard-version && git push --follow-tags origin main && npm run package && npm run add-exports && npm run write-package-json && npm publish"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "svelte": "./dist/index.js"
+    },
+    "./ActivityIcon.svelte": {
+      "types": "./dist/ActivityIcon.svelte.d.ts",
+      "svelte": "./dist/ActivityIcon.svelte"
+    },
+    "./AirplayIcon.svelte": {
+      "types": "./dist/AirplayIcon.svelte.d.ts",
+      "svelte": "./dist/AirplayIcon.svelte"
+    },
+    "./AlertCircleIcon.svelte": {
+      "types": "./dist/AlertCircleIcon.svelte.d.ts",
+      "svelte": "./dist/AlertCircleIcon.svelte"
+    },
+    "./AlertOctagonIcon.svelte": {
+      "types": "./dist/AlertOctagonIcon.svelte.d.ts",
+      "svelte": "./dist/AlertOctagonIcon.svelte"
+    },
+    "./AlertTriangleIcon.svelte": {
+      "types": "./dist/AlertTriangleIcon.svelte.d.ts",
+      "svelte": "./dist/AlertTriangleIcon.svelte"
+    },
+    "./AlignCenterIcon.svelte": {
+      "types": "./dist/AlignCenterIcon.svelte.d.ts",
+      "svelte": "./dist/AlignCenterIcon.svelte"
+    },
+    "./AlignJustifyIcon.svelte": {
+      "types": "./dist/AlignJustifyIcon.svelte.d.ts",
+      "svelte": "./dist/AlignJustifyIcon.svelte"
+    },
+    "./AlignLeftIcon.svelte": {
+      "types": "./dist/AlignLeftIcon.svelte.d.ts",
+      "svelte": "./dist/AlignLeftIcon.svelte"
+    },
+    "./AlignRightIcon.svelte": {
+      "types": "./dist/AlignRightIcon.svelte.d.ts",
+      "svelte": "./dist/AlignRightIcon.svelte"
+    },
+    "./AnchorIcon.svelte": {
+      "types": "./dist/AnchorIcon.svelte.d.ts",
+      "svelte": "./dist/AnchorIcon.svelte"
+    },
+    "./ApertureIcon.svelte": {
+      "types": "./dist/ApertureIcon.svelte.d.ts",
+      "svelte": "./dist/ApertureIcon.svelte"
+    },
+    "./ArchiveIcon.svelte": {
+      "types": "./dist/ArchiveIcon.svelte.d.ts",
+      "svelte": "./dist/ArchiveIcon.svelte"
+    },
+    "./ArrowDownCircleIcon.svelte": {
+      "types": "./dist/ArrowDownCircleIcon.svelte.d.ts",
+      "svelte": "./dist/ArrowDownCircleIcon.svelte"
+    },
+    "./ArrowDownIcon.svelte": {
+      "types": "./dist/ArrowDownIcon.svelte.d.ts",
+      "svelte": "./dist/ArrowDownIcon.svelte"
+    },
+    "./ArrowDownLeftIcon.svelte": {
+      "types": "./dist/ArrowDownLeftIcon.svelte.d.ts",
+      "svelte": "./dist/ArrowDownLeftIcon.svelte"
+    },
+    "./ArrowDownRightIcon.svelte": {
+      "types": "./dist/ArrowDownRightIcon.svelte.d.ts",
+      "svelte": "./dist/ArrowDownRightIcon.svelte"
+    },
+    "./ArrowLeftCircleIcon.svelte": {
+      "types": "./dist/ArrowLeftCircleIcon.svelte.d.ts",
+      "svelte": "./dist/ArrowLeftCircleIcon.svelte"
+    },
+    "./ArrowLeftIcon.svelte": {
+      "types": "./dist/ArrowLeftIcon.svelte.d.ts",
+      "svelte": "./dist/ArrowLeftIcon.svelte"
+    },
+    "./ArrowRightCircleIcon.svelte": {
+      "types": "./dist/ArrowRightCircleIcon.svelte.d.ts",
+      "svelte": "./dist/ArrowRightCircleIcon.svelte"
+    },
+    "./ArrowRightIcon.svelte": {
+      "types": "./dist/ArrowRightIcon.svelte.d.ts",
+      "svelte": "./dist/ArrowRightIcon.svelte"
+    },
+    "./ArrowUpCircleIcon.svelte": {
+      "types": "./dist/ArrowUpCircleIcon.svelte.d.ts",
+      "svelte": "./dist/ArrowUpCircleIcon.svelte"
+    },
+    "./ArrowUpIcon.svelte": {
+      "types": "./dist/ArrowUpIcon.svelte.d.ts",
+      "svelte": "./dist/ArrowUpIcon.svelte"
+    },
+    "./ArrowUpLeftIcon.svelte": {
+      "types": "./dist/ArrowUpLeftIcon.svelte.d.ts",
+      "svelte": "./dist/ArrowUpLeftIcon.svelte"
+    },
+    "./ArrowUpRightIcon.svelte": {
+      "types": "./dist/ArrowUpRightIcon.svelte.d.ts",
+      "svelte": "./dist/ArrowUpRightIcon.svelte"
+    },
+    "./AtSignIcon.svelte": {
+      "types": "./dist/AtSignIcon.svelte.d.ts",
+      "svelte": "./dist/AtSignIcon.svelte"
+    },
+    "./AwardIcon.svelte": {
+      "types": "./dist/AwardIcon.svelte.d.ts",
+      "svelte": "./dist/AwardIcon.svelte"
+    },
+    "./BarChart2Icon.svelte": {
+      "types": "./dist/BarChart2Icon.svelte.d.ts",
+      "svelte": "./dist/BarChart2Icon.svelte"
+    },
+    "./BarChartIcon.svelte": {
+      "types": "./dist/BarChartIcon.svelte.d.ts",
+      "svelte": "./dist/BarChartIcon.svelte"
+    },
+    "./BatteryChargingIcon.svelte": {
+      "types": "./dist/BatteryChargingIcon.svelte.d.ts",
+      "svelte": "./dist/BatteryChargingIcon.svelte"
+    },
+    "./BatteryIcon.svelte": {
+      "types": "./dist/BatteryIcon.svelte.d.ts",
+      "svelte": "./dist/BatteryIcon.svelte"
+    },
+    "./BellIcon.svelte": {
+      "types": "./dist/BellIcon.svelte.d.ts",
+      "svelte": "./dist/BellIcon.svelte"
+    },
+    "./BellOffIcon.svelte": {
+      "types": "./dist/BellOffIcon.svelte.d.ts",
+      "svelte": "./dist/BellOffIcon.svelte"
+    },
+    "./BluetoothIcon.svelte": {
+      "types": "./dist/BluetoothIcon.svelte.d.ts",
+      "svelte": "./dist/BluetoothIcon.svelte"
+    },
+    "./BoldIcon.svelte": {
+      "types": "./dist/BoldIcon.svelte.d.ts",
+      "svelte": "./dist/BoldIcon.svelte"
+    },
+    "./BookIcon.svelte": {
+      "types": "./dist/BookIcon.svelte.d.ts",
+      "svelte": "./dist/BookIcon.svelte"
+    },
+    "./BookOpenIcon.svelte": {
+      "types": "./dist/BookOpenIcon.svelte.d.ts",
+      "svelte": "./dist/BookOpenIcon.svelte"
+    },
+    "./BookmarkIcon.svelte": {
+      "types": "./dist/BookmarkIcon.svelte.d.ts",
+      "svelte": "./dist/BookmarkIcon.svelte"
+    },
+    "./BoxIcon.svelte": {
+      "types": "./dist/BoxIcon.svelte.d.ts",
+      "svelte": "./dist/BoxIcon.svelte"
+    },
+    "./BriefcaseIcon.svelte": {
+      "types": "./dist/BriefcaseIcon.svelte.d.ts",
+      "svelte": "./dist/BriefcaseIcon.svelte"
+    },
+    "./CalendarIcon.svelte": {
+      "types": "./dist/CalendarIcon.svelte.d.ts",
+      "svelte": "./dist/CalendarIcon.svelte"
+    },
+    "./CameraIcon.svelte": {
+      "types": "./dist/CameraIcon.svelte.d.ts",
+      "svelte": "./dist/CameraIcon.svelte"
+    },
+    "./CameraOffIcon.svelte": {
+      "types": "./dist/CameraOffIcon.svelte.d.ts",
+      "svelte": "./dist/CameraOffIcon.svelte"
+    },
+    "./CastIcon.svelte": {
+      "types": "./dist/CastIcon.svelte.d.ts",
+      "svelte": "./dist/CastIcon.svelte"
+    },
+    "./CheckCircleIcon.svelte": {
+      "types": "./dist/CheckCircleIcon.svelte.d.ts",
+      "svelte": "./dist/CheckCircleIcon.svelte"
+    },
+    "./CheckIcon.svelte": {
+      "types": "./dist/CheckIcon.svelte.d.ts",
+      "svelte": "./dist/CheckIcon.svelte"
+    },
+    "./CheckSquareIcon.svelte": {
+      "types": "./dist/CheckSquareIcon.svelte.d.ts",
+      "svelte": "./dist/CheckSquareIcon.svelte"
+    },
+    "./ChevronDownIcon.svelte": {
+      "types": "./dist/ChevronDownIcon.svelte.d.ts",
+      "svelte": "./dist/ChevronDownIcon.svelte"
+    },
+    "./ChevronLeftIcon.svelte": {
+      "types": "./dist/ChevronLeftIcon.svelte.d.ts",
+      "svelte": "./dist/ChevronLeftIcon.svelte"
+    },
+    "./ChevronRightIcon.svelte": {
+      "types": "./dist/ChevronRightIcon.svelte.d.ts",
+      "svelte": "./dist/ChevronRightIcon.svelte"
+    },
+    "./ChevronUpIcon.svelte": {
+      "types": "./dist/ChevronUpIcon.svelte.d.ts",
+      "svelte": "./dist/ChevronUpIcon.svelte"
+    },
+    "./ChevronsDownIcon.svelte": {
+      "types": "./dist/ChevronsDownIcon.svelte.d.ts",
+      "svelte": "./dist/ChevronsDownIcon.svelte"
+    },
+    "./ChevronsLeftIcon.svelte": {
+      "types": "./dist/ChevronsLeftIcon.svelte.d.ts",
+      "svelte": "./dist/ChevronsLeftIcon.svelte"
+    },
+    "./ChevronsRightIcon.svelte": {
+      "types": "./dist/ChevronsRightIcon.svelte.d.ts",
+      "svelte": "./dist/ChevronsRightIcon.svelte"
+    },
+    "./ChevronsUpIcon.svelte": {
+      "types": "./dist/ChevronsUpIcon.svelte.d.ts",
+      "svelte": "./dist/ChevronsUpIcon.svelte"
+    },
+    "./ChromeIcon.svelte": {
+      "types": "./dist/ChromeIcon.svelte.d.ts",
+      "svelte": "./dist/ChromeIcon.svelte"
+    },
+    "./CircleIcon.svelte": {
+      "types": "./dist/CircleIcon.svelte.d.ts",
+      "svelte": "./dist/CircleIcon.svelte"
+    },
+    "./ClipboardIcon.svelte": {
+      "types": "./dist/ClipboardIcon.svelte.d.ts",
+      "svelte": "./dist/ClipboardIcon.svelte"
+    },
+    "./ClockIcon.svelte": {
+      "types": "./dist/ClockIcon.svelte.d.ts",
+      "svelte": "./dist/ClockIcon.svelte"
+    },
+    "./CloudDrizzleIcon.svelte": {
+      "types": "./dist/CloudDrizzleIcon.svelte.d.ts",
+      "svelte": "./dist/CloudDrizzleIcon.svelte"
+    },
+    "./CloudIcon.svelte": {
+      "types": "./dist/CloudIcon.svelte.d.ts",
+      "svelte": "./dist/CloudIcon.svelte"
+    },
+    "./CloudLightningIcon.svelte": {
+      "types": "./dist/CloudLightningIcon.svelte.d.ts",
+      "svelte": "./dist/CloudLightningIcon.svelte"
+    },
+    "./CloudOffIcon.svelte": {
+      "types": "./dist/CloudOffIcon.svelte.d.ts",
+      "svelte": "./dist/CloudOffIcon.svelte"
+    },
+    "./CloudRainIcon.svelte": {
+      "types": "./dist/CloudRainIcon.svelte.d.ts",
+      "svelte": "./dist/CloudRainIcon.svelte"
+    },
+    "./CloudSnowIcon.svelte": {
+      "types": "./dist/CloudSnowIcon.svelte.d.ts",
+      "svelte": "./dist/CloudSnowIcon.svelte"
+    },
+    "./CodeIcon.svelte": {
+      "types": "./dist/CodeIcon.svelte.d.ts",
+      "svelte": "./dist/CodeIcon.svelte"
+    },
+    "./CodepenIcon.svelte": {
+      "types": "./dist/CodepenIcon.svelte.d.ts",
+      "svelte": "./dist/CodepenIcon.svelte"
+    },
+    "./CodesandboxIcon.svelte": {
+      "types": "./dist/CodesandboxIcon.svelte.d.ts",
+      "svelte": "./dist/CodesandboxIcon.svelte"
+    },
+    "./CoffeeIcon.svelte": {
+      "types": "./dist/CoffeeIcon.svelte.d.ts",
+      "svelte": "./dist/CoffeeIcon.svelte"
+    },
+    "./ColumnsIcon.svelte": {
+      "types": "./dist/ColumnsIcon.svelte.d.ts",
+      "svelte": "./dist/ColumnsIcon.svelte"
+    },
+    "./CommandIcon.svelte": {
+      "types": "./dist/CommandIcon.svelte.d.ts",
+      "svelte": "./dist/CommandIcon.svelte"
+    },
+    "./CompassIcon.svelte": {
+      "types": "./dist/CompassIcon.svelte.d.ts",
+      "svelte": "./dist/CompassIcon.svelte"
+    },
+    "./CopyIcon.svelte": {
+      "types": "./dist/CopyIcon.svelte.d.ts",
+      "svelte": "./dist/CopyIcon.svelte"
+    },
+    "./CornerDownLeftIcon.svelte": {
+      "types": "./dist/CornerDownLeftIcon.svelte.d.ts",
+      "svelte": "./dist/CornerDownLeftIcon.svelte"
+    },
+    "./CornerDownRightIcon.svelte": {
+      "types": "./dist/CornerDownRightIcon.svelte.d.ts",
+      "svelte": "./dist/CornerDownRightIcon.svelte"
+    },
+    "./CornerLeftDownIcon.svelte": {
+      "types": "./dist/CornerLeftDownIcon.svelte.d.ts",
+      "svelte": "./dist/CornerLeftDownIcon.svelte"
+    },
+    "./CornerLeftUpIcon.svelte": {
+      "types": "./dist/CornerLeftUpIcon.svelte.d.ts",
+      "svelte": "./dist/CornerLeftUpIcon.svelte"
+    },
+    "./CornerRightDownIcon.svelte": {
+      "types": "./dist/CornerRightDownIcon.svelte.d.ts",
+      "svelte": "./dist/CornerRightDownIcon.svelte"
+    },
+    "./CornerRightUpIcon.svelte": {
+      "types": "./dist/CornerRightUpIcon.svelte.d.ts",
+      "svelte": "./dist/CornerRightUpIcon.svelte"
+    },
+    "./CornerUpLeftIcon.svelte": {
+      "types": "./dist/CornerUpLeftIcon.svelte.d.ts",
+      "svelte": "./dist/CornerUpLeftIcon.svelte"
+    },
+    "./CornerUpRightIcon.svelte": {
+      "types": "./dist/CornerUpRightIcon.svelte.d.ts",
+      "svelte": "./dist/CornerUpRightIcon.svelte"
+    },
+    "./CpuIcon.svelte": {
+      "types": "./dist/CpuIcon.svelte.d.ts",
+      "svelte": "./dist/CpuIcon.svelte"
+    },
+    "./CreditCardIcon.svelte": {
+      "types": "./dist/CreditCardIcon.svelte.d.ts",
+      "svelte": "./dist/CreditCardIcon.svelte"
+    },
+    "./CropIcon.svelte": {
+      "types": "./dist/CropIcon.svelte.d.ts",
+      "svelte": "./dist/CropIcon.svelte"
+    },
+    "./CrosshairIcon.svelte": {
+      "types": "./dist/CrosshairIcon.svelte.d.ts",
+      "svelte": "./dist/CrosshairIcon.svelte"
+    },
+    "./DatabaseIcon.svelte": {
+      "types": "./dist/DatabaseIcon.svelte.d.ts",
+      "svelte": "./dist/DatabaseIcon.svelte"
+    },
+    "./DeleteIcon.svelte": {
+      "types": "./dist/DeleteIcon.svelte.d.ts",
+      "svelte": "./dist/DeleteIcon.svelte"
+    },
+    "./DiscIcon.svelte": {
+      "types": "./dist/DiscIcon.svelte.d.ts",
+      "svelte": "./dist/DiscIcon.svelte"
+    },
+    "./DivideCircleIcon.svelte": {
+      "types": "./dist/DivideCircleIcon.svelte.d.ts",
+      "svelte": "./dist/DivideCircleIcon.svelte"
+    },
+    "./DivideIcon.svelte": {
+      "types": "./dist/DivideIcon.svelte.d.ts",
+      "svelte": "./dist/DivideIcon.svelte"
+    },
+    "./DivideSquareIcon.svelte": {
+      "types": "./dist/DivideSquareIcon.svelte.d.ts",
+      "svelte": "./dist/DivideSquareIcon.svelte"
+    },
+    "./DollarSignIcon.svelte": {
+      "types": "./dist/DollarSignIcon.svelte.d.ts",
+      "svelte": "./dist/DollarSignIcon.svelte"
+    },
+    "./DownloadCloudIcon.svelte": {
+      "types": "./dist/DownloadCloudIcon.svelte.d.ts",
+      "svelte": "./dist/DownloadCloudIcon.svelte"
+    },
+    "./DownloadIcon.svelte": {
+      "types": "./dist/DownloadIcon.svelte.d.ts",
+      "svelte": "./dist/DownloadIcon.svelte"
+    },
+    "./DribbbleIcon.svelte": {
+      "types": "./dist/DribbbleIcon.svelte.d.ts",
+      "svelte": "./dist/DribbbleIcon.svelte"
+    },
+    "./DropletIcon.svelte": {
+      "types": "./dist/DropletIcon.svelte.d.ts",
+      "svelte": "./dist/DropletIcon.svelte"
+    },
+    "./Edit2Icon.svelte": {
+      "types": "./dist/Edit2Icon.svelte.d.ts",
+      "svelte": "./dist/Edit2Icon.svelte"
+    },
+    "./Edit3Icon.svelte": {
+      "types": "./dist/Edit3Icon.svelte.d.ts",
+      "svelte": "./dist/Edit3Icon.svelte"
+    },
+    "./EditIcon.svelte": {
+      "types": "./dist/EditIcon.svelte.d.ts",
+      "svelte": "./dist/EditIcon.svelte"
+    },
+    "./ExternalLinkIcon.svelte": {
+      "types": "./dist/ExternalLinkIcon.svelte.d.ts",
+      "svelte": "./dist/ExternalLinkIcon.svelte"
+    },
+    "./EyeIcon.svelte": {
+      "types": "./dist/EyeIcon.svelte.d.ts",
+      "svelte": "./dist/EyeIcon.svelte"
+    },
+    "./EyeOffIcon.svelte": {
+      "types": "./dist/EyeOffIcon.svelte.d.ts",
+      "svelte": "./dist/EyeOffIcon.svelte"
+    },
+    "./FacebookIcon.svelte": {
+      "types": "./dist/FacebookIcon.svelte.d.ts",
+      "svelte": "./dist/FacebookIcon.svelte"
+    },
+    "./FastForwardIcon.svelte": {
+      "types": "./dist/FastForwardIcon.svelte.d.ts",
+      "svelte": "./dist/FastForwardIcon.svelte"
+    },
+    "./FeatherIcon.svelte": {
+      "types": "./dist/FeatherIcon.svelte.d.ts",
+      "svelte": "./dist/FeatherIcon.svelte"
+    },
+    "./FigmaIcon.svelte": {
+      "types": "./dist/FigmaIcon.svelte.d.ts",
+      "svelte": "./dist/FigmaIcon.svelte"
+    },
+    "./FileIcon.svelte": {
+      "types": "./dist/FileIcon.svelte.d.ts",
+      "svelte": "./dist/FileIcon.svelte"
+    },
+    "./FileMinusIcon.svelte": {
+      "types": "./dist/FileMinusIcon.svelte.d.ts",
+      "svelte": "./dist/FileMinusIcon.svelte"
+    },
+    "./FilePlusIcon.svelte": {
+      "types": "./dist/FilePlusIcon.svelte.d.ts",
+      "svelte": "./dist/FilePlusIcon.svelte"
+    },
+    "./FileTextIcon.svelte": {
+      "types": "./dist/FileTextIcon.svelte.d.ts",
+      "svelte": "./dist/FileTextIcon.svelte"
+    },
+    "./FilmIcon.svelte": {
+      "types": "./dist/FilmIcon.svelte.d.ts",
+      "svelte": "./dist/FilmIcon.svelte"
+    },
+    "./FilterIcon.svelte": {
+      "types": "./dist/FilterIcon.svelte.d.ts",
+      "svelte": "./dist/FilterIcon.svelte"
+    },
+    "./FlagIcon.svelte": {
+      "types": "./dist/FlagIcon.svelte.d.ts",
+      "svelte": "./dist/FlagIcon.svelte"
+    },
+    "./FolderIcon.svelte": {
+      "types": "./dist/FolderIcon.svelte.d.ts",
+      "svelte": "./dist/FolderIcon.svelte"
+    },
+    "./FolderMinusIcon.svelte": {
+      "types": "./dist/FolderMinusIcon.svelte.d.ts",
+      "svelte": "./dist/FolderMinusIcon.svelte"
+    },
+    "./FolderPlusIcon.svelte": {
+      "types": "./dist/FolderPlusIcon.svelte.d.ts",
+      "svelte": "./dist/FolderPlusIcon.svelte"
+    },
+    "./FramerIcon.svelte": {
+      "types": "./dist/FramerIcon.svelte.d.ts",
+      "svelte": "./dist/FramerIcon.svelte"
+    },
+    "./FrownIcon.svelte": {
+      "types": "./dist/FrownIcon.svelte.d.ts",
+      "svelte": "./dist/FrownIcon.svelte"
+    },
+    "./GiftIcon.svelte": {
+      "types": "./dist/GiftIcon.svelte.d.ts",
+      "svelte": "./dist/GiftIcon.svelte"
+    },
+    "./GitBranchIcon.svelte": {
+      "types": "./dist/GitBranchIcon.svelte.d.ts",
+      "svelte": "./dist/GitBranchIcon.svelte"
+    },
+    "./GitCommitIcon.svelte": {
+      "types": "./dist/GitCommitIcon.svelte.d.ts",
+      "svelte": "./dist/GitCommitIcon.svelte"
+    },
+    "./GitMergeIcon.svelte": {
+      "types": "./dist/GitMergeIcon.svelte.d.ts",
+      "svelte": "./dist/GitMergeIcon.svelte"
+    },
+    "./GitPullRequestIcon.svelte": {
+      "types": "./dist/GitPullRequestIcon.svelte.d.ts",
+      "svelte": "./dist/GitPullRequestIcon.svelte"
+    },
+    "./GithubIcon.svelte": {
+      "types": "./dist/GithubIcon.svelte.d.ts",
+      "svelte": "./dist/GithubIcon.svelte"
+    },
+    "./GitlabIcon.svelte": {
+      "types": "./dist/GitlabIcon.svelte.d.ts",
+      "svelte": "./dist/GitlabIcon.svelte"
+    },
+    "./GlobeIcon.svelte": {
+      "types": "./dist/GlobeIcon.svelte.d.ts",
+      "svelte": "./dist/GlobeIcon.svelte"
+    },
+    "./GridIcon.svelte": {
+      "types": "./dist/GridIcon.svelte.d.ts",
+      "svelte": "./dist/GridIcon.svelte"
+    },
+    "./HardDriveIcon.svelte": {
+      "types": "./dist/HardDriveIcon.svelte.d.ts",
+      "svelte": "./dist/HardDriveIcon.svelte"
+    },
+    "./HashIcon.svelte": {
+      "types": "./dist/HashIcon.svelte.d.ts",
+      "svelte": "./dist/HashIcon.svelte"
+    },
+    "./HeadphonesIcon.svelte": {
+      "types": "./dist/HeadphonesIcon.svelte.d.ts",
+      "svelte": "./dist/HeadphonesIcon.svelte"
+    },
+    "./HeartIcon.svelte": {
+      "types": "./dist/HeartIcon.svelte.d.ts",
+      "svelte": "./dist/HeartIcon.svelte"
+    },
+    "./HelpCircleIcon.svelte": {
+      "types": "./dist/HelpCircleIcon.svelte.d.ts",
+      "svelte": "./dist/HelpCircleIcon.svelte"
+    },
+    "./HexagonIcon.svelte": {
+      "types": "./dist/HexagonIcon.svelte.d.ts",
+      "svelte": "./dist/HexagonIcon.svelte"
+    },
+    "./HomeIcon.svelte": {
+      "types": "./dist/HomeIcon.svelte.d.ts",
+      "svelte": "./dist/HomeIcon.svelte"
+    },
+    "./ImageIcon.svelte": {
+      "types": "./dist/ImageIcon.svelte.d.ts",
+      "svelte": "./dist/ImageIcon.svelte"
+    },
+    "./InboxIcon.svelte": {
+      "types": "./dist/InboxIcon.svelte.d.ts",
+      "svelte": "./dist/InboxIcon.svelte"
+    },
+    "./InfoIcon.svelte": {
+      "types": "./dist/InfoIcon.svelte.d.ts",
+      "svelte": "./dist/InfoIcon.svelte"
+    },
+    "./InstagramIcon.svelte": {
+      "types": "./dist/InstagramIcon.svelte.d.ts",
+      "svelte": "./dist/InstagramIcon.svelte"
+    },
+    "./ItalicIcon.svelte": {
+      "types": "./dist/ItalicIcon.svelte.d.ts",
+      "svelte": "./dist/ItalicIcon.svelte"
+    },
+    "./KeyIcon.svelte": {
+      "types": "./dist/KeyIcon.svelte.d.ts",
+      "svelte": "./dist/KeyIcon.svelte"
+    },
+    "./LayersIcon.svelte": {
+      "types": "./dist/LayersIcon.svelte.d.ts",
+      "svelte": "./dist/LayersIcon.svelte"
+    },
+    "./LayoutIcon.svelte": {
+      "types": "./dist/LayoutIcon.svelte.d.ts",
+      "svelte": "./dist/LayoutIcon.svelte"
+    },
+    "./LifeBuoyIcon.svelte": {
+      "types": "./dist/LifeBuoyIcon.svelte.d.ts",
+      "svelte": "./dist/LifeBuoyIcon.svelte"
+    },
+    "./Link2Icon.svelte": {
+      "types": "./dist/Link2Icon.svelte.d.ts",
+      "svelte": "./dist/Link2Icon.svelte"
+    },
+    "./LinkIcon.svelte": {
+      "types": "./dist/LinkIcon.svelte.d.ts",
+      "svelte": "./dist/LinkIcon.svelte"
+    },
+    "./LinkedinIcon.svelte": {
+      "types": "./dist/LinkedinIcon.svelte.d.ts",
+      "svelte": "./dist/LinkedinIcon.svelte"
+    },
+    "./ListIcon.svelte": {
+      "types": "./dist/ListIcon.svelte.d.ts",
+      "svelte": "./dist/ListIcon.svelte"
+    },
+    "./LoaderIcon.svelte": {
+      "types": "./dist/LoaderIcon.svelte.d.ts",
+      "svelte": "./dist/LoaderIcon.svelte"
+    },
+    "./LockIcon.svelte": {
+      "types": "./dist/LockIcon.svelte.d.ts",
+      "svelte": "./dist/LockIcon.svelte"
+    },
+    "./LogInIcon.svelte": {
+      "types": "./dist/LogInIcon.svelte.d.ts",
+      "svelte": "./dist/LogInIcon.svelte"
+    },
+    "./LogOutIcon.svelte": {
+      "types": "./dist/LogOutIcon.svelte.d.ts",
+      "svelte": "./dist/LogOutIcon.svelte"
+    },
+    "./MailIcon.svelte": {
+      "types": "./dist/MailIcon.svelte.d.ts",
+      "svelte": "./dist/MailIcon.svelte"
+    },
+    "./MapIcon.svelte": {
+      "types": "./dist/MapIcon.svelte.d.ts",
+      "svelte": "./dist/MapIcon.svelte"
+    },
+    "./MapPinIcon.svelte": {
+      "types": "./dist/MapPinIcon.svelte.d.ts",
+      "svelte": "./dist/MapPinIcon.svelte"
+    },
+    "./Maximize2Icon.svelte": {
+      "types": "./dist/Maximize2Icon.svelte.d.ts",
+      "svelte": "./dist/Maximize2Icon.svelte"
+    },
+    "./MaximizeIcon.svelte": {
+      "types": "./dist/MaximizeIcon.svelte.d.ts",
+      "svelte": "./dist/MaximizeIcon.svelte"
+    },
+    "./MehIcon.svelte": {
+      "types": "./dist/MehIcon.svelte.d.ts",
+      "svelte": "./dist/MehIcon.svelte"
+    },
+    "./MenuIcon.svelte": {
+      "types": "./dist/MenuIcon.svelte.d.ts",
+      "svelte": "./dist/MenuIcon.svelte"
+    },
+    "./MessageCircleIcon.svelte": {
+      "types": "./dist/MessageCircleIcon.svelte.d.ts",
+      "svelte": "./dist/MessageCircleIcon.svelte"
+    },
+    "./MessageSquareIcon.svelte": {
+      "types": "./dist/MessageSquareIcon.svelte.d.ts",
+      "svelte": "./dist/MessageSquareIcon.svelte"
+    },
+    "./MicIcon.svelte": {
+      "types": "./dist/MicIcon.svelte.d.ts",
+      "svelte": "./dist/MicIcon.svelte"
+    },
+    "./MicOffIcon.svelte": {
+      "types": "./dist/MicOffIcon.svelte.d.ts",
+      "svelte": "./dist/MicOffIcon.svelte"
+    },
+    "./Minimize2Icon.svelte": {
+      "types": "./dist/Minimize2Icon.svelte.d.ts",
+      "svelte": "./dist/Minimize2Icon.svelte"
+    },
+    "./MinimizeIcon.svelte": {
+      "types": "./dist/MinimizeIcon.svelte.d.ts",
+      "svelte": "./dist/MinimizeIcon.svelte"
+    },
+    "./MinusCircleIcon.svelte": {
+      "types": "./dist/MinusCircleIcon.svelte.d.ts",
+      "svelte": "./dist/MinusCircleIcon.svelte"
+    },
+    "./MinusIcon.svelte": {
+      "types": "./dist/MinusIcon.svelte.d.ts",
+      "svelte": "./dist/MinusIcon.svelte"
+    },
+    "./MinusSquareIcon.svelte": {
+      "types": "./dist/MinusSquareIcon.svelte.d.ts",
+      "svelte": "./dist/MinusSquareIcon.svelte"
+    },
+    "./MonitorIcon.svelte": {
+      "types": "./dist/MonitorIcon.svelte.d.ts",
+      "svelte": "./dist/MonitorIcon.svelte"
+    },
+    "./MoonIcon.svelte": {
+      "types": "./dist/MoonIcon.svelte.d.ts",
+      "svelte": "./dist/MoonIcon.svelte"
+    },
+    "./MoreHorizontalIcon.svelte": {
+      "types": "./dist/MoreHorizontalIcon.svelte.d.ts",
+      "svelte": "./dist/MoreHorizontalIcon.svelte"
+    },
+    "./MoreVerticalIcon.svelte": {
+      "types": "./dist/MoreVerticalIcon.svelte.d.ts",
+      "svelte": "./dist/MoreVerticalIcon.svelte"
+    },
+    "./MousePointerIcon.svelte": {
+      "types": "./dist/MousePointerIcon.svelte.d.ts",
+      "svelte": "./dist/MousePointerIcon.svelte"
+    },
+    "./MoveIcon.svelte": {
+      "types": "./dist/MoveIcon.svelte.d.ts",
+      "svelte": "./dist/MoveIcon.svelte"
+    },
+    "./MusicIcon.svelte": {
+      "types": "./dist/MusicIcon.svelte.d.ts",
+      "svelte": "./dist/MusicIcon.svelte"
+    },
+    "./Navigation2Icon.svelte": {
+      "types": "./dist/Navigation2Icon.svelte.d.ts",
+      "svelte": "./dist/Navigation2Icon.svelte"
+    },
+    "./NavigationIcon.svelte": {
+      "types": "./dist/NavigationIcon.svelte.d.ts",
+      "svelte": "./dist/NavigationIcon.svelte"
+    },
+    "./OctagonIcon.svelte": {
+      "types": "./dist/OctagonIcon.svelte.d.ts",
+      "svelte": "./dist/OctagonIcon.svelte"
+    },
+    "./PackageIcon.svelte": {
+      "types": "./dist/PackageIcon.svelte.d.ts",
+      "svelte": "./dist/PackageIcon.svelte"
+    },
+    "./PaperclipIcon.svelte": {
+      "types": "./dist/PaperclipIcon.svelte.d.ts",
+      "svelte": "./dist/PaperclipIcon.svelte"
+    },
+    "./PauseCircleIcon.svelte": {
+      "types": "./dist/PauseCircleIcon.svelte.d.ts",
+      "svelte": "./dist/PauseCircleIcon.svelte"
+    },
+    "./PauseIcon.svelte": {
+      "types": "./dist/PauseIcon.svelte.d.ts",
+      "svelte": "./dist/PauseIcon.svelte"
+    },
+    "./PenToolIcon.svelte": {
+      "types": "./dist/PenToolIcon.svelte.d.ts",
+      "svelte": "./dist/PenToolIcon.svelte"
+    },
+    "./PercentIcon.svelte": {
+      "types": "./dist/PercentIcon.svelte.d.ts",
+      "svelte": "./dist/PercentIcon.svelte"
+    },
+    "./PhoneCallIcon.svelte": {
+      "types": "./dist/PhoneCallIcon.svelte.d.ts",
+      "svelte": "./dist/PhoneCallIcon.svelte"
+    },
+    "./PhoneForwardedIcon.svelte": {
+      "types": "./dist/PhoneForwardedIcon.svelte.d.ts",
+      "svelte": "./dist/PhoneForwardedIcon.svelte"
+    },
+    "./PhoneIcon.svelte": {
+      "types": "./dist/PhoneIcon.svelte.d.ts",
+      "svelte": "./dist/PhoneIcon.svelte"
+    },
+    "./PhoneIncomingIcon.svelte": {
+      "types": "./dist/PhoneIncomingIcon.svelte.d.ts",
+      "svelte": "./dist/PhoneIncomingIcon.svelte"
+    },
+    "./PhoneMissedIcon.svelte": {
+      "types": "./dist/PhoneMissedIcon.svelte.d.ts",
+      "svelte": "./dist/PhoneMissedIcon.svelte"
+    },
+    "./PhoneOffIcon.svelte": {
+      "types": "./dist/PhoneOffIcon.svelte.d.ts",
+      "svelte": "./dist/PhoneOffIcon.svelte"
+    },
+    "./PhoneOutgoingIcon.svelte": {
+      "types": "./dist/PhoneOutgoingIcon.svelte.d.ts",
+      "svelte": "./dist/PhoneOutgoingIcon.svelte"
+    },
+    "./PieChartIcon.svelte": {
+      "types": "./dist/PieChartIcon.svelte.d.ts",
+      "svelte": "./dist/PieChartIcon.svelte"
+    },
+    "./PlayCircleIcon.svelte": {
+      "types": "./dist/PlayCircleIcon.svelte.d.ts",
+      "svelte": "./dist/PlayCircleIcon.svelte"
+    },
+    "./PlayIcon.svelte": {
+      "types": "./dist/PlayIcon.svelte.d.ts",
+      "svelte": "./dist/PlayIcon.svelte"
+    },
+    "./PlusCircleIcon.svelte": {
+      "types": "./dist/PlusCircleIcon.svelte.d.ts",
+      "svelte": "./dist/PlusCircleIcon.svelte"
+    },
+    "./PlusIcon.svelte": {
+      "types": "./dist/PlusIcon.svelte.d.ts",
+      "svelte": "./dist/PlusIcon.svelte"
+    },
+    "./PlusSquareIcon.svelte": {
+      "types": "./dist/PlusSquareIcon.svelte.d.ts",
+      "svelte": "./dist/PlusSquareIcon.svelte"
+    },
+    "./PocketIcon.svelte": {
+      "types": "./dist/PocketIcon.svelte.d.ts",
+      "svelte": "./dist/PocketIcon.svelte"
+    },
+    "./PowerIcon.svelte": {
+      "types": "./dist/PowerIcon.svelte.d.ts",
+      "svelte": "./dist/PowerIcon.svelte"
+    },
+    "./PrinterIcon.svelte": {
+      "types": "./dist/PrinterIcon.svelte.d.ts",
+      "svelte": "./dist/PrinterIcon.svelte"
+    },
+    "./RadioIcon.svelte": {
+      "types": "./dist/RadioIcon.svelte.d.ts",
+      "svelte": "./dist/RadioIcon.svelte"
+    },
+    "./RefreshCcwIcon.svelte": {
+      "types": "./dist/RefreshCcwIcon.svelte.d.ts",
+      "svelte": "./dist/RefreshCcwIcon.svelte"
+    },
+    "./RefreshCwIcon.svelte": {
+      "types": "./dist/RefreshCwIcon.svelte.d.ts",
+      "svelte": "./dist/RefreshCwIcon.svelte"
+    },
+    "./RepeatIcon.svelte": {
+      "types": "./dist/RepeatIcon.svelte.d.ts",
+      "svelte": "./dist/RepeatIcon.svelte"
+    },
+    "./RewindIcon.svelte": {
+      "types": "./dist/RewindIcon.svelte.d.ts",
+      "svelte": "./dist/RewindIcon.svelte"
+    },
+    "./RotateCcwIcon.svelte": {
+      "types": "./dist/RotateCcwIcon.svelte.d.ts",
+      "svelte": "./dist/RotateCcwIcon.svelte"
+    },
+    "./RotateCwIcon.svelte": {
+      "types": "./dist/RotateCwIcon.svelte.d.ts",
+      "svelte": "./dist/RotateCwIcon.svelte"
+    },
+    "./RssIcon.svelte": {
+      "types": "./dist/RssIcon.svelte.d.ts",
+      "svelte": "./dist/RssIcon.svelte"
+    },
+    "./SaveIcon.svelte": {
+      "types": "./dist/SaveIcon.svelte.d.ts",
+      "svelte": "./dist/SaveIcon.svelte"
+    },
+    "./ScissorsIcon.svelte": {
+      "types": "./dist/ScissorsIcon.svelte.d.ts",
+      "svelte": "./dist/ScissorsIcon.svelte"
+    },
+    "./SearchIcon.svelte": {
+      "types": "./dist/SearchIcon.svelte.d.ts",
+      "svelte": "./dist/SearchIcon.svelte"
+    },
+    "./SendIcon.svelte": {
+      "types": "./dist/SendIcon.svelte.d.ts",
+      "svelte": "./dist/SendIcon.svelte"
+    },
+    "./ServerIcon.svelte": {
+      "types": "./dist/ServerIcon.svelte.d.ts",
+      "svelte": "./dist/ServerIcon.svelte"
+    },
+    "./SettingsIcon.svelte": {
+      "types": "./dist/SettingsIcon.svelte.d.ts",
+      "svelte": "./dist/SettingsIcon.svelte"
+    },
+    "./Share2Icon.svelte": {
+      "types": "./dist/Share2Icon.svelte.d.ts",
+      "svelte": "./dist/Share2Icon.svelte"
+    },
+    "./ShareIcon.svelte": {
+      "types": "./dist/ShareIcon.svelte.d.ts",
+      "svelte": "./dist/ShareIcon.svelte"
+    },
+    "./ShieldIcon.svelte": {
+      "types": "./dist/ShieldIcon.svelte.d.ts",
+      "svelte": "./dist/ShieldIcon.svelte"
+    },
+    "./ShieldOffIcon.svelte": {
+      "types": "./dist/ShieldOffIcon.svelte.d.ts",
+      "svelte": "./dist/ShieldOffIcon.svelte"
+    },
+    "./ShoppingBagIcon.svelte": {
+      "types": "./dist/ShoppingBagIcon.svelte.d.ts",
+      "svelte": "./dist/ShoppingBagIcon.svelte"
+    },
+    "./ShoppingCartIcon.svelte": {
+      "types": "./dist/ShoppingCartIcon.svelte.d.ts",
+      "svelte": "./dist/ShoppingCartIcon.svelte"
+    },
+    "./ShuffleIcon.svelte": {
+      "types": "./dist/ShuffleIcon.svelte.d.ts",
+      "svelte": "./dist/ShuffleIcon.svelte"
+    },
+    "./SidebarIcon.svelte": {
+      "types": "./dist/SidebarIcon.svelte.d.ts",
+      "svelte": "./dist/SidebarIcon.svelte"
+    },
+    "./SkipBackIcon.svelte": {
+      "types": "./dist/SkipBackIcon.svelte.d.ts",
+      "svelte": "./dist/SkipBackIcon.svelte"
+    },
+    "./SkipForwardIcon.svelte": {
+      "types": "./dist/SkipForwardIcon.svelte.d.ts",
+      "svelte": "./dist/SkipForwardIcon.svelte"
+    },
+    "./SlackIcon.svelte": {
+      "types": "./dist/SlackIcon.svelte.d.ts",
+      "svelte": "./dist/SlackIcon.svelte"
+    },
+    "./SlashIcon.svelte": {
+      "types": "./dist/SlashIcon.svelte.d.ts",
+      "svelte": "./dist/SlashIcon.svelte"
+    },
+    "./SlidersIcon.svelte": {
+      "types": "./dist/SlidersIcon.svelte.d.ts",
+      "svelte": "./dist/SlidersIcon.svelte"
+    },
+    "./SmartphoneIcon.svelte": {
+      "types": "./dist/SmartphoneIcon.svelte.d.ts",
+      "svelte": "./dist/SmartphoneIcon.svelte"
+    },
+    "./SmileIcon.svelte": {
+      "types": "./dist/SmileIcon.svelte.d.ts",
+      "svelte": "./dist/SmileIcon.svelte"
+    },
+    "./SpeakerIcon.svelte": {
+      "types": "./dist/SpeakerIcon.svelte.d.ts",
+      "svelte": "./dist/SpeakerIcon.svelte"
+    },
+    "./SquareIcon.svelte": {
+      "types": "./dist/SquareIcon.svelte.d.ts",
+      "svelte": "./dist/SquareIcon.svelte"
+    },
+    "./StarIcon.svelte": {
+      "types": "./dist/StarIcon.svelte.d.ts",
+      "svelte": "./dist/StarIcon.svelte"
+    },
+    "./StopCircleIcon.svelte": {
+      "types": "./dist/StopCircleIcon.svelte.d.ts",
+      "svelte": "./dist/StopCircleIcon.svelte"
+    },
+    "./SunIcon.svelte": {
+      "types": "./dist/SunIcon.svelte.d.ts",
+      "svelte": "./dist/SunIcon.svelte"
+    },
+    "./SunriseIcon.svelte": {
+      "types": "./dist/SunriseIcon.svelte.d.ts",
+      "svelte": "./dist/SunriseIcon.svelte"
+    },
+    "./SunsetIcon.svelte": {
+      "types": "./dist/SunsetIcon.svelte.d.ts",
+      "svelte": "./dist/SunsetIcon.svelte"
+    },
+    "./TableIcon.svelte": {
+      "types": "./dist/TableIcon.svelte.d.ts",
+      "svelte": "./dist/TableIcon.svelte"
+    },
+    "./TabletIcon.svelte": {
+      "types": "./dist/TabletIcon.svelte.d.ts",
+      "svelte": "./dist/TabletIcon.svelte"
+    },
+    "./TagIcon.svelte": {
+      "types": "./dist/TagIcon.svelte.d.ts",
+      "svelte": "./dist/TagIcon.svelte"
+    },
+    "./TargetIcon.svelte": {
+      "types": "./dist/TargetIcon.svelte.d.ts",
+      "svelte": "./dist/TargetIcon.svelte"
+    },
+    "./TerminalIcon.svelte": {
+      "types": "./dist/TerminalIcon.svelte.d.ts",
+      "svelte": "./dist/TerminalIcon.svelte"
+    },
+    "./ThermometerIcon.svelte": {
+      "types": "./dist/ThermometerIcon.svelte.d.ts",
+      "svelte": "./dist/ThermometerIcon.svelte"
+    },
+    "./ThumbsDownIcon.svelte": {
+      "types": "./dist/ThumbsDownIcon.svelte.d.ts",
+      "svelte": "./dist/ThumbsDownIcon.svelte"
+    },
+    "./ThumbsUpIcon.svelte": {
+      "types": "./dist/ThumbsUpIcon.svelte.d.ts",
+      "svelte": "./dist/ThumbsUpIcon.svelte"
+    },
+    "./ToggleLeftIcon.svelte": {
+      "types": "./dist/ToggleLeftIcon.svelte.d.ts",
+      "svelte": "./dist/ToggleLeftIcon.svelte"
+    },
+    "./ToggleRightIcon.svelte": {
+      "types": "./dist/ToggleRightIcon.svelte.d.ts",
+      "svelte": "./dist/ToggleRightIcon.svelte"
+    },
+    "./ToolIcon.svelte": {
+      "types": "./dist/ToolIcon.svelte.d.ts",
+      "svelte": "./dist/ToolIcon.svelte"
+    },
+    "./Trash2Icon.svelte": {
+      "types": "./dist/Trash2Icon.svelte.d.ts",
+      "svelte": "./dist/Trash2Icon.svelte"
+    },
+    "./TrashIcon.svelte": {
+      "types": "./dist/TrashIcon.svelte.d.ts",
+      "svelte": "./dist/TrashIcon.svelte"
+    },
+    "./TrelloIcon.svelte": {
+      "types": "./dist/TrelloIcon.svelte.d.ts",
+      "svelte": "./dist/TrelloIcon.svelte"
+    },
+    "./TrendingDownIcon.svelte": {
+      "types": "./dist/TrendingDownIcon.svelte.d.ts",
+      "svelte": "./dist/TrendingDownIcon.svelte"
+    },
+    "./TrendingUpIcon.svelte": {
+      "types": "./dist/TrendingUpIcon.svelte.d.ts",
+      "svelte": "./dist/TrendingUpIcon.svelte"
+    },
+    "./TriangleIcon.svelte": {
+      "types": "./dist/TriangleIcon.svelte.d.ts",
+      "svelte": "./dist/TriangleIcon.svelte"
+    },
+    "./TruckIcon.svelte": {
+      "types": "./dist/TruckIcon.svelte.d.ts",
+      "svelte": "./dist/TruckIcon.svelte"
+    },
+    "./TvIcon.svelte": {
+      "types": "./dist/TvIcon.svelte.d.ts",
+      "svelte": "./dist/TvIcon.svelte"
+    },
+    "./TwitchIcon.svelte": {
+      "types": "./dist/TwitchIcon.svelte.d.ts",
+      "svelte": "./dist/TwitchIcon.svelte"
+    },
+    "./TwitterIcon.svelte": {
+      "types": "./dist/TwitterIcon.svelte.d.ts",
+      "svelte": "./dist/TwitterIcon.svelte"
+    },
+    "./TypeIcon.svelte": {
+      "types": "./dist/TypeIcon.svelte.d.ts",
+      "svelte": "./dist/TypeIcon.svelte"
+    },
+    "./UmbrellaIcon.svelte": {
+      "types": "./dist/UmbrellaIcon.svelte.d.ts",
+      "svelte": "./dist/UmbrellaIcon.svelte"
+    },
+    "./UnderlineIcon.svelte": {
+      "types": "./dist/UnderlineIcon.svelte.d.ts",
+      "svelte": "./dist/UnderlineIcon.svelte"
+    },
+    "./UnlockIcon.svelte": {
+      "types": "./dist/UnlockIcon.svelte.d.ts",
+      "svelte": "./dist/UnlockIcon.svelte"
+    },
+    "./UploadCloudIcon.svelte": {
+      "types": "./dist/UploadCloudIcon.svelte.d.ts",
+      "svelte": "./dist/UploadCloudIcon.svelte"
+    },
+    "./UploadIcon.svelte": {
+      "types": "./dist/UploadIcon.svelte.d.ts",
+      "svelte": "./dist/UploadIcon.svelte"
+    },
+    "./UserCheckIcon.svelte": {
+      "types": "./dist/UserCheckIcon.svelte.d.ts",
+      "svelte": "./dist/UserCheckIcon.svelte"
+    },
+    "./UserIcon.svelte": {
+      "types": "./dist/UserIcon.svelte.d.ts",
+      "svelte": "./dist/UserIcon.svelte"
+    },
+    "./UserMinusIcon.svelte": {
+      "types": "./dist/UserMinusIcon.svelte.d.ts",
+      "svelte": "./dist/UserMinusIcon.svelte"
+    },
+    "./UserPlusIcon.svelte": {
+      "types": "./dist/UserPlusIcon.svelte.d.ts",
+      "svelte": "./dist/UserPlusIcon.svelte"
+    },
+    "./UserXIcon.svelte": {
+      "types": "./dist/UserXIcon.svelte.d.ts",
+      "svelte": "./dist/UserXIcon.svelte"
+    },
+    "./UsersIcon.svelte": {
+      "types": "./dist/UsersIcon.svelte.d.ts",
+      "svelte": "./dist/UsersIcon.svelte"
+    },
+    "./VideoIcon.svelte": {
+      "types": "./dist/VideoIcon.svelte.d.ts",
+      "svelte": "./dist/VideoIcon.svelte"
+    },
+    "./VideoOffIcon.svelte": {
+      "types": "./dist/VideoOffIcon.svelte.d.ts",
+      "svelte": "./dist/VideoOffIcon.svelte"
+    },
+    "./VoicemailIcon.svelte": {
+      "types": "./dist/VoicemailIcon.svelte.d.ts",
+      "svelte": "./dist/VoicemailIcon.svelte"
+    },
+    "./Volume1Icon.svelte": {
+      "types": "./dist/Volume1Icon.svelte.d.ts",
+      "svelte": "./dist/Volume1Icon.svelte"
+    },
+    "./Volume2Icon.svelte": {
+      "types": "./dist/Volume2Icon.svelte.d.ts",
+      "svelte": "./dist/Volume2Icon.svelte"
+    },
+    "./VolumeIcon.svelte": {
+      "types": "./dist/VolumeIcon.svelte.d.ts",
+      "svelte": "./dist/VolumeIcon.svelte"
+    },
+    "./VolumeXIcon.svelte": {
+      "types": "./dist/VolumeXIcon.svelte.d.ts",
+      "svelte": "./dist/VolumeXIcon.svelte"
+    },
+    "./WatchIcon.svelte": {
+      "types": "./dist/WatchIcon.svelte.d.ts",
+      "svelte": "./dist/WatchIcon.svelte"
+    },
+    "./WifiIcon.svelte": {
+      "types": "./dist/WifiIcon.svelte.d.ts",
+      "svelte": "./dist/WifiIcon.svelte"
+    },
+    "./WifiOffIcon.svelte": {
+      "types": "./dist/WifiOffIcon.svelte.d.ts",
+      "svelte": "./dist/WifiOffIcon.svelte"
+    },
+    "./WindIcon.svelte": {
+      "types": "./dist/WindIcon.svelte.d.ts",
+      "svelte": "./dist/WindIcon.svelte"
+    },
+    "./XCircleIcon.svelte": {
+      "types": "./dist/XCircleIcon.svelte.d.ts",
+      "svelte": "./dist/XCircleIcon.svelte"
+    },
+    "./XIcon.svelte": {
+      "types": "./dist/XIcon.svelte.d.ts",
+      "svelte": "./dist/XIcon.svelte"
+    },
+    "./XOctagonIcon.svelte": {
+      "types": "./dist/XOctagonIcon.svelte.d.ts",
+      "svelte": "./dist/XOctagonIcon.svelte"
+    },
+    "./XSquareIcon.svelte": {
+      "types": "./dist/XSquareIcon.svelte.d.ts",
+      "svelte": "./dist/XSquareIcon.svelte"
+    },
+    "./YoutubeIcon.svelte": {
+      "types": "./dist/YoutubeIcon.svelte.d.ts",
+      "svelte": "./dist/YoutubeIcon.svelte"
+    },
+    "./ZapIcon.svelte": {
+      "types": "./dist/ZapIcon.svelte.d.ts",
+      "svelte": "./dist/ZapIcon.svelte"
+    },
+    "./ZapOffIcon.svelte": {
+      "types": "./dist/ZapOffIcon.svelte.d.ts",
+      "svelte": "./dist/ZapOffIcon.svelte"
+    },
+    "./ZoomInIcon.svelte": {
+      "types": "./dist/ZoomInIcon.svelte.d.ts",
+      "svelte": "./dist/ZoomInIcon.svelte"
+    },
+    "./ZoomOutIcon.svelte": {
+      "types": "./dist/ZoomOutIcon.svelte.d.ts",
+      "svelte": "./dist/ZoomOutIcon.svelte"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "svelte": "^3.54.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.31.0",
+    "@sveltejs/adapter-auto": "^2.0.0",
+    "@sveltejs/kit": "^1.8.3",
+    "@sveltejs/package": "^2.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.53.0",
+    "@typescript-eslint/parser": "^5.53.0",
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-svelte3": "^4.0.0",
+    "prettier": "^2.8.4",
+    "prettier-plugin-svelte": "^2.9.0",
+    "publint": "^0.1.9",
+    "svelte": "^3.55.1",
+    "svelte-check": "^3.0.3",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.4",
+    "vitest": "^0.25.8"
+  },
+  "svelte": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "keywords": [
+    "svelte",
+    "sveltekit",
+    "feathericons",
+    "icons"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shinokada/svelte-feathers"
+  }
 }
