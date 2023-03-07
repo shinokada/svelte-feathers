@@ -16,6 +16,9 @@
 
 Svelte-Feathers is a collection of simply beautiful open source icons for Sveltejs. Each icon is designed on a 24x24 grid with an emphasis on simplicity, consistency and readability. All icons support major CSS frameworks.
 
+
+Thank you for considering using my open-source package for your project. I appreciate your support and contributions towards the development of this package. If you are using this package in a commercial or profit-generating project, please consider supporting me by clicking on the following link, [https://github.com/sponsors/shinokada](https://github.com/sponsors/shinokada). Your support will help me maintain and improve the quality of this package for the benefit of the entire community.
+
 <p align="center">
 <img width="650" src="/static/images/feather-optimized.png" />
 </p>
