@@ -42,17 +42,42 @@ import { ActivityIcon, AirplayIcon } from 'svelte-feathers';
 <AirplayIcon color="#23deff" size="36" />
 ```
 
-[REPL](https://svelte.dev/repl/1fe15642604f48b38e2ea67ead9818dc?version=3.47.0)
 
-You can also include the whole icon pack:
+## Faster compiling
+
+For faster compilation, you can import the icon directly.
 
 ```html
 <script>
-import * as Icon from 'svelte-feathers';
+  import ActivityIcon from 'svelte-feathers/ActivityIcon.svelte';
 </script>
 
-<UnlockIcon color="#6dff6b" size="24" />
+<Us />
 ```
+
+If you are TypeScript user, **this require `"typescript": "^5.0.0"`.**
+
+As of March 2023, the `typescript@beta` version is now available:
+
+```sh
+pnpm i -D typescript@beta
+```
+
+To avoid any complaints from the editor, add `node16` or `nodenext` to `moduleResolution` in your tsconfig.json file.
+
+```json
+{
+  //...
+  "compilerOptions": {
+    // ...
+    "moduleResolution": "nodenext"
+  }
+}
+```
+
+## REPL
+
+[REPL](https://svelte.dev/repl/1fe15642604f48b38e2ea67ead9818dc?version=3.47.0)
 
 [REPL](https://svelte.dev/repl/a759c2c6f2f94c0f8a2d07b1889b2faf?version=3.47.0)
 
@@ -86,6 +111,60 @@ Bootstrap example:
 
 ```html
 <UnlockIcon class="position-absolute top-0 px-1" />
+```
+
+## Import all
+
+You can also include the whole icon pack:
+
+```html
+<script>
+import * as Icon from 'svelte-feathers';
+</script>
+
+<UnlockIcon color="#6dff6b" size="24" />
+```
+
+## Unfocusable icon
+
+If you want to make an icon unfocusable, add `tabindex="-1"`.
+
+```html
+<UnlockIcon tabindex="-1" />
+```
+
+## Passing down other attributes
+
+You can pass other attibutes as well.
+
+```html
+<UnlockIcon tabindex="0" />
+```
+
+## Using svelte:component
+
+```html
+<script>
+  import { UnlockIcon } from 'svelte-feathers';
+</script>
+
+<svelte:component this="{UnlockIcon}" />
+```
+
+## Using onMount
+
+```html
+<script>
+  import { UnlockIcon } from 'svelte-feathers';
+  import { onMount } from 'svelte';
+  const props = {
+    size: '50',
+    color: '#ff0000'
+  };
+  onMount(() => {
+    const icon = new UnlockIcon({ target: document.body, props });
+  });
+</script>
 ```
 
 ## Based on Feather Icons  ```v4.29.0```
