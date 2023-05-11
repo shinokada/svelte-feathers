@@ -1,5 +1,3 @@
-# Icon list
-
 - ActivityIcon.svelte
 - AirplayIcon.svelte
 - AlertCircleIcon.svelte
@@ -287,7 +285,4 @@
 - ZapOffIcon.svelte
 - ZoomInIcon.svelte
 - ZoomOutIcon.svelte
-
-## Back to Home
-
-[Back to Home](/)
+- index.js

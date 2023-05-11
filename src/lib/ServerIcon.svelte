@@ -7,7 +7,7 @@
   stroke={color}
   stroke-width="2"
   stroke-linecap="round"
-  stroke-linejoin="round" class={$$props.class}
+  stroke-linejoin="round" class={$$props.class} on:click on:mouseenter on:mouseleave on:mouseover on:mouseout on:blur on:focus 
 >
   <rect x="2" y="2" width="20" height="8" rx="2" ry="2" />
   <rect x="2" y="14" width="20" height="8" rx="2" ry="2" />

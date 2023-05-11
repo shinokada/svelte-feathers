@@ -14,8 +14,7 @@
 <a href="https://www.npmjs.com/package/svelte-feathers" rel="nofollow" target="_blank"><img src="https://img.shields.io/npm/dw/svelte-feathers.svg" alt="npm" height="25"></a>
 </p>
 
-Svelte-Feathers is a collection of simply beautiful open source icons for Sveltejs. Each icon is designed on a 24x24 grid with an emphasis on simplicity, consistency and readability. All icons support major CSS frameworks.
-
+280+ Svelte-Feathers icon components for Svelte. It is a collection of simply beautiful open source icons for Sveltejs. Each icon is designed on a 24x24 grid with an emphasis on simplicity, consistency and readability. All icons support major CSS frameworks.
 
 Thank you for considering my open-source package. If you use it in a commercial project, please support me by sponsoring me on GitHub: https://github.com/sponsors/shinokada. Your support helps me maintain and improve this package for the benefit of the community.
 
@@ -134,6 +133,20 @@ If you want to make an icon unfocusable, add `tabindex="-1"`.
 
 ```html
 <UnlockIcon tabindex="-1" />
+```
+
+## Events
+
+All icons have the following events:
+
+```
+on:click
+on:mouseenter
+on:mouseleave
+on:mouseover
+on:mouseout
+on:blur
+on:focus
 ```
 
 ## Passing down other attributes

@@ -7,7 +7,7 @@
   stroke={color}
   stroke-width="2"
   stroke-linecap="round"
-  stroke-linejoin="round" class={$$props.class}
+  stroke-linejoin="round" class={$$props.class} on:click on:mouseenter on:mouseleave on:mouseover on:mouseout on:blur on:focus 
 >
   <ellipse cx="12" cy="5" rx="9" ry="3" />
   <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
