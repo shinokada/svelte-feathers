@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.1](https://github.com/shinokada/svelte-feathers/compare/v0.5.2...v0.6.1) (2023-05-11)
+
+
+### Features
+
+* add events update docs ([0086706](https://github.com/shinokada/svelte-feathers/commit/0086706e52a1277d7e3d25593ab4e084e9d920fa))
+
 ### [0.5.2](https://github.com/shinokada/svelte-feathers/compare/v0.5.1...v0.5.2) (2023-03-07)
 
 
