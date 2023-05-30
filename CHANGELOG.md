@@ -6,10 +6,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.6.2](https://github.com/shinokada/svelte-feathers/compare/v0.6.1...v0.6.2) (2023-05-30)
 
-
 ### Features
 
-* add component docs ([4d69a93](https://github.com/shinokada/svelte-feathers/commit/4d69a930698a5076bc1f8a1dbf8c41bf55d24fe1))
+- add component docs ([4d69a93](https://github.com/shinokada/svelte-feathers/commit/4d69a930698a5076bc1f8a1dbf8c41bf55d24fe1))
 
 ### [0.6.1](https://github.com/shinokada/svelte-feathers/compare/v0.5.2...v0.6.1) (2023-05-11)
 
