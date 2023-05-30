@@ -22,7 +22,7 @@ Thank you for considering my open-source package. If you use it in a commercial 
 <img width="650" src="/static/images/feather-optimized.png" />
 </p>
 
-## Installation new
+## Installation
 
 ```sh
 npm i -D svelte-feathers
@@ -82,6 +82,15 @@ To avoid any complaints from the editor, add `node16` or `nodenext` to `moduleRe
 
 [REPL](https://svelte.dev/repl/a759c2c6f2f94c0f8a2d07b1889b2faf?version=3.47.0)
 
+## Props
+
+- size = '24';
+- color = 'currentColor';
+
+## IDE support
+
+If you are using an LSP-compatible editor, such as VSCode, Atom, Sublime Text, or Neovim, hovering over a component name will display a documentation link, props, and events.
+
 ## Size
 
 Use the size prop to change the size of icons.
@@ -134,19 +143,19 @@ If you want to make an icon unfocusable, add `tabindex="-1"`.
 <UnlockIcon tabindex="-1" />
 ```
 
-## Events
+## Event
 
 All icons have the following events:
 
-```
-on:click
-on:mouseenter
-on:mouseleave
-on:mouseover
-on:mouseout
-on:blur
-on:focus
-```
+- on:click
+- on:keydown
+- on:keyup
+- on:focus
+- on:blur
+- on:mouseenter
+- on:mouseleave
+- on:mouseover
+- on:mouseout
 
 ## Passing down other attributes
 
