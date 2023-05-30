@@ -36,14 +36,13 @@ Please see this [Icon names](/icon-list.md).
 
 ```html
 <script>
-import { ActivityIcon, AirplayIcon } from 'svelte-feathers';
+  import { ActivityIcon, AirplayIcon } from 'svelte-feathers';
 </script>
 
 <ActivityIcon color="#c61515" size="12" />
 
 <AirplayIcon color="#23deff" size="36" />
 ```
-
 
 ## Faster compiling
 
@@ -121,7 +120,7 @@ You can also include the whole icon pack:
 
 ```html
 <script>
-import * as Icon from 'svelte-feathers';
+  import * as Icon from 'svelte-feathers';
 </script>
 
 <UnlockIcon color="#6dff6b" size="24" />
@@ -183,7 +182,7 @@ You can pass other attibutes as well.
 </script>
 ```
 
-## Based on Feather Icons  ```v4.29.0```
+## Based on Feather Icons `v4.29.0`
 
 https://feathericons.com/
 
