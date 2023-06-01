@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.6](https://github.com/shinokada/svelte-feathers/compare/v0.6.5...v0.6.6) (2023-06-01)
+
+
+### Features
+
+* add prop role="img" ([74542d6](https://github.com/shinokada/svelte-feathers/commit/74542d6b7c54e38a5c4e55000ad6e480bcb9009b))
+
 ### [0.6.5](https://github.com/shinokada/svelte-feathers/compare/v0.6.4...v0.6.5) (2023-06-01)
 
 ### Features
