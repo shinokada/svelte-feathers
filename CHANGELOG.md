@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.5](https://github.com/shinokada/svelte-feathers/compare/v0.6.4...v0.6.5) (2023-06-01)
+
+
+### Features
+
+* add || ^4.0.0 to peerDependencies ([3198c31](https://github.com/shinokada/svelte-feathers/commit/3198c3179827ded3641320d130759d80c156f98e))
+
 ### [0.6.4](https://github.com/shinokada/svelte-feathers/compare/v0.6.3...v0.6.4) (2023-05-30)
 
 
