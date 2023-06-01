@@ -4,17 +4,15 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.6.5](https://github.com/shinokada/svelte-feathers/compare/v0.6.4...v0.6.5) (2023-06-01)
 
-
 ### Features
 
-* add || ^4.0.0 to peerDependencies ([3198c31](https://github.com/shinokada/svelte-feathers/commit/3198c3179827ded3641320d130759d80c156f98e))
+- add || ^4.0.0 to peerDependencies ([3198c31](https://github.com/shinokada/svelte-feathers/commit/3198c3179827ded3641320d130759d80c156f98e))
 
 ### [0.6.4](https://github.com/shinokada/svelte-feathers/compare/v0.6.3...v0.6.4) (2023-05-30)
 
-
 ### Bug Fixes
 
-* doc link ([a14ea1b](https://github.com/shinokada/svelte-feathers/commit/a14ea1bf4ce90f1841550fb57ffee00b45d4b44b))
+- doc link ([a14ea1b](https://github.com/shinokada/svelte-feathers/commit/a14ea1bf4ce90f1841550fb57ffee00b45d4b44b))
 
 ### [0.6.3](https://github.com/shinokada/svelte-feathers/compare/v0.6.2...v0.6.3) (2023-05-30)
 
