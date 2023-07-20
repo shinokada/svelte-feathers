@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.6.8](https://github.com/shinokada/svelte-feathers/compare/v0.6.7...v0.6.8) (2023-07-20)
+
+
+### Features
+
+* update layout ([0de9be9](https://github.com/shinokada/svelte-feathers/commit/0de9be95930ecd68fa4c6d8c63519d4fb1582743))
+
+
+### Bug Fixes
+
+* homepage update ([db2507f](https://github.com/shinokada/svelte-feathers/commit/db2507f6f7ca4e38d99573dc2c629d7159117723))
+* image sizes ([fe22b7c](https://github.com/shinokada/svelte-feathers/commit/fe22b7c97b1cfb0235dd4df66f89d1fd0eb51e72))
+* update flowbite-svelte v0.40.1, add @floating-ui/dom remove flowbite and popper, add tests ([62f7cfc](https://github.com/shinokada/svelte-feathers/commit/62f7cfc8acedbc6146b3c1534a9f0c6ae2b7bc93))
+* update range ([32615ff](https://github.com/shinokada/svelte-feathers/commit/32615ff713eae9e6b5059e5920d574e377cffb80))
+
 ### [0.6.7](https://github.com/shinokada/svelte-feathers/compare/v0.6.6...v0.6.7) (2023-06-15)
 
 ### [0.6.6](https://github.com/shinokada/svelte-feathers/compare/v0.6.5...v0.6.6) (2023-06-01)
