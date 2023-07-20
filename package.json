@@ -8,7 +8,7 @@
     "url": "https://blog.codewithshin.com"
   },
   "bugs": "https://github.com/shinokada/svelte-feathers/issues",
-  "homepage": "https://svelte-feathers.codewithshin.com",
+  "homepage": "https://svelte-feathers.vercel.app",
   "license": "MIT",
   "scripts": {
     "dev": "vite dev",
