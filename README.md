@@ -37,49 +37,21 @@ pnpm i -D svelte-feathers
 
 ```html
 <script>
-  import { ActivityIcon, AirplayIcon } from 'svelte-feathers';
+  import { Icon } from 'svelte-feathers';
 </script>
 
-<ActivityIcon color="#c61515" size="12" />
-
-<AirplayIcon color="#23deff" size="36" />
-```
-
-## Faster compiling
-
-If you need only a few icons from this library in your Svelte app, import them directly. This can optimize compilation speed and improve performance by reducing the amount of code processed during compilation.
-
-```html
-<script>
-  import ActivityIcon from 'svelte-feathers/ActivityIcon.svelte';
-</script>
-
-<ActivityIcon />
-```
-
-If you are a TypeScript user, install **typescript version 5.0.0 or above**.
-
-```sh
-pnpm i -D typescript@beta
-```
-
-To avoid any complaints from the editor, add `node16` or `nodenext` to `moduleResolution` in your tsconfig.json file.
-
-```json
-{
-  //...
-  "compilerOptions": {
-    // ...
-    "moduleResolution": "nodenext"
-  }
-}
+<Icon name="activity" />
 ```
 
 ## Props
 
-- size = '24';
-- color = 'currentColor';
-- role = 'img';
+- @prop name;
+- @prop width = "24";
+- @prop height = "24";
+- @prop role = 'img';
+- @prop color = 'currentColor'
+- @prop ariaLabel='icon name'
+- @prop strokeWidth = "2";
 
 ## IDE support
 
@@ -87,53 +59,59 @@ If you are using an LSP-compatible editor, such as VSCode, Atom, Sublime Text, o
 
 ## Size
 
-Use the size prop to change the size of icons.
+Use the `width` and `height` props to change the size of icons.
 
 ```html
-<UnlockIcon size="24" />
+<Icon name="activity" width="100" height="100" />
 ```
 
-If you are using Tailwind CSS, you can add a custom size using Tailwind CSS by including the desired classes in the class prop. For example:
+If you are using Tailwind CSS, you can add a custom size using Tailwind CSS by including the desired classes in the `class` prop. For example:
 
 ```html
-<UnlockIcon class="shrink-0 h-20 w-20" />
+<Icon name="activity" class="shrink-0 h-20 w-20" />
 ```
 
 ## CSS HEX Colors
 
-Use the color prop to change colors with HEX color code.
+Use the `color` prop to change colors with HEX color code.
 
 ```html
-<UnlockIcon color="#6dff6b" />
+<Icon name="activity" color="#6dff6b" />
 ```
 
 ## CSS frameworks support
 
-You can apply CSS framework color and other attributes directly to the icon component or its parent tag using the class prop.
+You can apply CSS framework color and other attributes directly to the icon component or its parent tag using the `class` prop.
 
 Tailwind CSS example:
 
 ```html
-<UnlockIcon class="h-24 w-24 text-blue-700 mr-4" />
+<Icon name="activity" class="text-red-700 inline m-1" />
 ```
 
-Bootstrap example:
+Bootstrap examples:
 
 ```html
-<UnlockIcon class="position-absolute top-0 px-1" />
+<Icon name="activity" class="position-absolute top-0 px-1" />
 ```
 
-Dark mode with Tailwind CSS
+## Dark mode with Tailwind CSS
+
 If you are using the dark mode on your website with Tailwind CSS, add your dark mode class to the class prop.
 
 Let’s use dark for the dark mode class as an example.
 
 ```html
-<script>
-  import { UnlockIcon } from 'svelte-feathers';
-</script>
+<Icon name="activity" class="text-red-700 dark:text-green-500" />
+```
 
-<UnlockIcon class="text-blue-700 dark:text-red-500" />
+## aria-label
+
+All icons have aria-label. For example `activity` has `aria-label="activity"`.
+Use `ariaLabel` prop to modify the `aria-label` value.
+
+```html
+<Icon name="activity" ariaLabel="red activity" color="#c61515"/>
 ```
 
 ## Unfocusable icon
@@ -141,7 +119,7 @@ Let’s use dark for the dark mode class as an example.
 If you want to make an icon unfocusable, add `tabindex="-1"`.
 
 ```html
-<UnlockIcon tabindex="-1" />
+<Icon name="activity" tabindex="-1" />
 ```
 
 ## Event
@@ -163,45 +141,48 @@ All icons have the following events:
 You can pass other attibutes as well.
 
 ```html
-<UnlockIcon tabindex="0" />
+<Icon name="activity" tabindex="0" />
 ```
 
 ## Using svelte:component
 
 ```html
-<script>
-  import { UnlockIcon } from 'svelte-feathers';
-</script>
-
-<svelte:component this="{UnlockIcon}" />
+<svelte:component this="{Icon}" name="activity" />
 ```
 
 ## Using onMount
 
 ```html
 <script>
-  import { UnlockIcon } from 'svelte-feathers';
+  import { Icon } from 'svelte-feathers';
   import { onMount } from 'svelte';
   const props = {
+    name: 'activity',
     size: '50',
     color: '#ff0000'
   };
   onMount(() => {
-    const icon = new UnlockIcon({ target: document.body, props });
+    const icon = new Icon({ target: document.body, props });
   });
 </script>
 ```
 
 ## Import all
 
-You can also include the whole icon pack:
+
+Use `import {Icon, icons} from 'svelte-cssgg-icons';`.
 
 ```html
 <script>
-  import * as Icon from 'svelte-feathers';
+  import {Icon, icons} from 'svelte-cssgg-icons';
 </script>
 
-<UnlockIcon color="#6dff6b" size="24" />
+{#each Object.keys(icons) as name}
+<div class="flex gap-4 items-center text-lg">
+  <Icon name={name} bind:width={size} bind:height={size} class="shrink-0"/>
+  {name}
+</div>
+{/each}
 ```
 
 ## Other icons
