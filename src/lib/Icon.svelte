@@ -40,7 +40,7 @@ viewBox="0 0 {displayIcon.box} {displayIcon.box}"
 
 <!--
 @component
-[Go to Document](https://shinokada.github.io/replace_name/)
+[Go to Document](https://svelte-feathers.vercel.app/)
 ## Props
 @prop name;
 @prop width = "24";
