@@ -6,41 +6,36 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.7.4](https://github.com/shinokada/svelte-feathers/compare/v0.7.3...v0.7.4) (2023-07-31)
 
-
 ### Bug Fixes
 
-* component doc update ([fd54873](https://github.com/shinokada/svelte-feathers/commit/fd54873331ce71acb7615fc480f39aa37ef995d5))
+- component doc update ([fd54873](https://github.com/shinokada/svelte-feathers/commit/fd54873331ce71acb7615fc480f39aa37ef995d5))
 
 ### [0.7.3](https://github.com/shinokada/svelte-feathers/compare/v0.7.2...v0.7.3) (2023-07-29)
 
-
 ### Bug Fixes
 
-* update add-exports-to-package-json ([09e5d51](https://github.com/shinokada/svelte-feathers/commit/09e5d519cff76999d6f7a2e1dc81b79c75915ae0))
+- update add-exports-to-package-json ([09e5d51](https://github.com/shinokada/svelte-feathers/commit/09e5d519cff76999d6f7a2e1dc81b79c75915ae0))
 
 ### [0.7.2](https://github.com/shinokada/svelte-feathers/compare/v0.7.1...v0.7.2) (2023-07-29)
 
-
 ### Bug Fixes
 
-* add main to package.json ([a5a19b1](https://github.com/shinokada/svelte-feathers/commit/a5a19b1c973435382272660e2afafcd445dbc681))
+- add main to package.json ([a5a19b1](https://github.com/shinokada/svelte-feathers/commit/a5a19b1c973435382272660e2afafcd445dbc681))
 
 ### [0.7.1](https://github.com/shinokada/svelte-feathers/compare/v0.6.8...v0.7.1) (2023-07-29)
 
 ### [0.6.8](https://github.com/shinokada/svelte-feathers/compare/v0.6.7...v0.6.8) (2023-07-20)
 
-
 ### Features
 
-* update layout ([0de9be9](https://github.com/shinokada/svelte-feathers/commit/0de9be95930ecd68fa4c6d8c63519d4fb1582743))
-
+- update layout ([0de9be9](https://github.com/shinokada/svelte-feathers/commit/0de9be95930ecd68fa4c6d8c63519d4fb1582743))
 
 ### Bug Fixes
 
-* homepage update ([db2507f](https://github.com/shinokada/svelte-feathers/commit/db2507f6f7ca4e38d99573dc2c629d7159117723))
-* image sizes ([fe22b7c](https://github.com/shinokada/svelte-feathers/commit/fe22b7c97b1cfb0235dd4df66f89d1fd0eb51e72))
-* update flowbite-svelte v0.40.1, add @floating-ui/dom remove flowbite and popper, add tests ([62f7cfc](https://github.com/shinokada/svelte-feathers/commit/62f7cfc8acedbc6146b3c1534a9f0c6ae2b7bc93))
-* update range ([32615ff](https://github.com/shinokada/svelte-feathers/commit/32615ff713eae9e6b5059e5920d574e377cffb80))
+- homepage update ([db2507f](https://github.com/shinokada/svelte-feathers/commit/db2507f6f7ca4e38d99573dc2c629d7159117723))
+- image sizes ([fe22b7c](https://github.com/shinokada/svelte-feathers/commit/fe22b7c97b1cfb0235dd4df66f89d1fd0eb51e72))
+- update flowbite-svelte v0.40.1, add @floating-ui/dom remove flowbite and popper, add tests ([62f7cfc](https://github.com/shinokada/svelte-feathers/commit/62f7cfc8acedbc6146b3c1534a9f0c6ae2b7bc93))
+- update range ([32615ff](https://github.com/shinokada/svelte-feathers/commit/32615ff713eae9e6b5059e5920d574e377cffb80))
 
 ### [0.6.7](https://github.com/shinokada/svelte-feathers/compare/v0.6.6...v0.6.7) (2023-06-15)
 
