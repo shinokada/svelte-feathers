@@ -4,10 +4,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.8.1](https://github.com/shinokada/svelte-feathers/compare/v0.7.5...v0.8.1) (2023-08-31)
 
-
 ### Features
 
-* smaller compiled size and Icon component ([48177c1](https://github.com/shinokada/svelte-feathers/commit/48177c17a31ebaebfaa148ee900d24fc90f83868))
+- smaller compiled size and Icon component ([48177c1](https://github.com/shinokada/svelte-feathers/commit/48177c17a31ebaebfaa148ee900d24fc90f83868))
 
 ### [0.7.5](https://github.com/shinokada/svelte-feathers/compare/v0.7.4...v0.7.5) (2023-08-03)
 
