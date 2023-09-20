@@ -4,11 +4,10 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.8.3](https://github.com/shinokada/svelte-feathers/compare/v0.8.2...v0.8.3) (2023-09-20)
 
-
 ### Features
 
-* add context ([00e7dee](https://github.com/shinokada/svelte-feathers/commit/00e7deea4a22e1cae3b1151d2e1c7d684caedc66))
-* add sidebar menu ([54f2bc7](https://github.com/shinokada/svelte-feathers/commit/54f2bc7bb3d713dc2bb2460d6efb52aebb010ee5))
+- add context ([00e7dee](https://github.com/shinokada/svelte-feathers/commit/00e7deea4a22e1cae3b1151d2e1c7d684caedc66))
+- add sidebar menu ([54f2bc7](https://github.com/shinokada/svelte-feathers/commit/54f2bc7bb3d713dc2bb2460d6efb52aebb010ee5))
 
 ### [0.8.2](https://github.com/shinokada/svelte-feathers/compare/v0.8.1...v0.8.2) (2023-08-31)
 
