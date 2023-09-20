@@ -80,8 +80,6 @@ If you are using Tailwind CSS, you can add a custom size using Tailwind CSS by i
 <UnlockIcon class="shrink-0 h-20 w-20" />
 ```
 
-
-
 ## Creating a Default Global Icon Setting in Svelte
 
 You can create a config file, `/src/lib/icon.config.json`.

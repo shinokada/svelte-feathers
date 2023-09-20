@@ -1,3 +1,7 @@
+---
+layout: mainLayout
+---
+
 # Svelte Feathers
 
 <div class="flex gap-2 my-8">
@@ -79,8 +83,6 @@ If you are using Tailwind CSS, you can add a custom size using Tailwind CSS by i
 ```html
 <UnlockIcon class="shrink-0 h-20 w-20" />
 ```
-
-
 
 ## Creating a Default Global Icon Setting in Svelte
 
