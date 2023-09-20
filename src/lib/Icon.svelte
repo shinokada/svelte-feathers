@@ -14,7 +14,7 @@
   {size}
   {color}
   class={$$props.class}
-  aria-label={ariaLabel}
+  {ariaLabel}
 />
 
 <!--
