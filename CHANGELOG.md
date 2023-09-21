@@ -4,10 +4,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.8.4](https://github.com/shinokada/svelte-feathers/compare/v0.8.3...v0.8.4) (2023-09-20)
 
-
 ### Bug Fixes
 
-* badge size ([617d2d5](https://github.com/shinokada/svelte-feathers/commit/617d2d513b5f0685b2ec6db7a027f3e2ecd76a50))
+- badge size ([617d2d5](https://github.com/shinokada/svelte-feathers/commit/617d2d513b5f0685b2ec6db7a027f3e2ecd76a50))
 
 ### [0.8.3](https://github.com/shinokada/svelte-feathers/compare/v0.8.2...v0.8.3) (2023-09-20)
 
