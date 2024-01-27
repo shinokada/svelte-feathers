@@ -4,10 +4,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.8.5](https://github.com/shinokada/svelte-feathers/compare/v0.8.4...v0.8.5) (2024-01-27)
 
-
 ### Bug Fixes
 
-* add class="ml-3 m-0 lg:hidden md:block" to NavHamburger ([32103d5](https://github.com/shinokada/svelte-feathers/commit/32103d526c007e04c060e161189045747aef02e7))
+- add class="ml-3 m-0 lg:hidden md:block" to NavHamburger ([32103d5](https://github.com/shinokada/svelte-feathers/commit/32103d526c007e04c060e161189045747aef02e7))
 
 ### [0.8.4](https://github.com/shinokada/svelte-feathers/compare/v0.8.3...v0.8.4) (2023-09-20)
 
