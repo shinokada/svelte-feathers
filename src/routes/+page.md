@@ -26,16 +26,6 @@ pnpm i -D svelte-feathers
 
 [GitHub Repo](https://github.com/shinokada/svelte-feathers)
 
-## Original source
-
-[feathericons/feather](https://github.com/feathericons/feather)
-
-## License
-
-[Svelte-Feathers License](https://github.com/shinokada/svelte-feathers/LICENSE)
-
-[feathericons/feather License](https://github.com/feathericons/feather/blob/master/LICENSE)
-
 ## Usage
 
 ```html
@@ -323,6 +313,17 @@ You can also include the whole icon pack:
 <UnlockIcon color="#6dff6b" size="24" />
 ```
 
+## Original source
+
+[feathericons/feather](https://github.com/feathericons/feather)
+
+## License
+
+[Svelte-Feathers License](https://github.com/shinokada/svelte-feathers/LICENSE)
+
+[feathericons/feather License](https://github.com/feathericons/feather/blob/master/LICENSE)
+
+
 ## Other icons
 
-[Svelte-Icon-Sets](https://svelte-svg-icons.vercel.app/)
+[Svelte-Icon-Sets](https://svelte-svg-icons.codewithshin.com/)
