@@ -323,7 +323,6 @@ You can also include the whole icon pack:
 
 [feathericons/feather License](https://github.com/feathericons/feather/blob/master/LICENSE)
 
-
 ## Other icons
 
 [Svelte-Icon-Sets](https://svelte-svg-icons.codewithshin.com/)
