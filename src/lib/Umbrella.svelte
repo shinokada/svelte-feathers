@@ -4,6 +4,8 @@
   export let size = ctx.size || '24';
   export let role = ctx.role || 'img';
   export let color = ctx.color || 'currentColor';
+  export let tabIndex = ctx.tabIndex || '-1';
+  export let fill = ctx.fill || 'none';
   export let ariaLabel = 'umbrella';
 </script>
 
@@ -12,8 +14,9 @@
   width={size}
   height={size}
   viewBox="0 0 24 24"
-  fill="none"
+  fill={fill}
   stroke={color}
+  tabIndex={tabIndex}
   stroke-width="2"
   stroke-linecap="round"
   stroke-linejoin="round"
@@ -38,5 +41,6 @@
 @prop export let size = ctx.size || '24';
 @prop export let role = ctx.role || 'img';
 @prop export let color = ctx.color || 'currentColor';
+  export let tabIndex = ctx.tabIndex || '-1';
 @prop export let ariaLabel = 'umbrella';
 -->
