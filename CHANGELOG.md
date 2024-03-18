@@ -1,13 +1,19 @@
 # Changelog
 
+## 1.0.4
+
+### Patch Changes
+
+- fix: expose the fill and tabIndex props ([`6b7ecd2d58b62a35baad3280bce2bb38c934bf51`](https://github.com/shinokada/svelte-feathers/commit/6b7ecd2d58b62a35baad3280bce2bb38c934bf51))
+  chore: add changeset
+
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
 ### [1.0.3](https://github.com/shinokada/svelte-feathers/compare/v1.0.2...v1.0.3) (2024-03-01)
 
-
 ### Bug Fixes
 
-* @typescript-eslint/eslint-plugin update ([99115b0](https://github.com/shinokada/svelte-feathers/commit/99115b0e662f2103ffba2212cfe3fb63338a62c8))
+- @typescript-eslint/eslint-plugin update ([99115b0](https://github.com/shinokada/svelte-feathers/commit/99115b0e662f2103ffba2212cfe3fb63338a62c8))
 
 ### [1.0.2](https://github.com/shinokada/svelte-feathers/compare/v1.0.1...v1.0.2) (2024-03-01)
 
