@@ -1,6 +1,7 @@
 ---
 layout: mainLayout
 ---
+
 <script>
   import { Banner } from 'flowbite-svelte';
 </script>
@@ -62,6 +63,7 @@ If you need only a few icons from this library in your Svelte app, import them d
 ## Props
 
 - size = ctx.size || '24';
+- withEvents: boolean = false;
 - role = ctx.role || 'img';
 - color = ctx.color || 'currentColor';
 - ariaLabel = 'file name';
@@ -254,17 +256,18 @@ Let’s use dark for the dark mode class as an example.
 <UnlockIcon class="text-blue-700 dark:text-red-500" />
 ```
 
-## Unfocusable icon
+## Focusable icon
 
-If you want to make an icon unfocusable, add `tabindex="-1"`.
+Icons are unfocuable as the defalut.
+If you want to make an icon focusable, add `tabindex="0"`.
 
 ```html
-<UnlockIcon tabindex="-1" />
+<UnlockIcon tabindex="0" />
 ```
 
 ## Event
 
-All icons have the following events:
+All icons have the `withEvents` props. Use it if you want to add the following events:
 
 - on:click
 - on:keydown

@@ -1,62 +1,102 @@
-<script>
+<script lang="ts">
   import { getContext } from 'svelte';
-  const ctx = getContext('iconCtx') ?? {};
+  interface CtxType {
+    size?: string;
+    withEvents?: boolean;
+    role?: string;
+    color?: string;
+    class?: string;
+  }
+  const ctx: CtxType = getContext('iconCtx') ?? {};
+  interface Props {
+    size?: string;
+    withEvents?: boolean;
+    role?: string;
+    color?: string;
+    ariaLabel?: string;
+    class?: string;
+  }
+  let className = ctx.class || '';
+  export { className as class };
   export let size = ctx.size || '24';
+  export let withEvents: boolean = false;
   export let role = ctx.role || 'img';
   export let color = ctx.color || 'currentColor';
-  export let tabIndex = ctx.tabIndex || '-1';
-  export let fill = ctx.fill || 'none';
   export let ariaLabel = 'aperture';
 </script>
 
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  width={size}
-  height={size}
-  viewBox="0 0 24 24"
-  fill={fill}
-  stroke={color}
-  tabIndex={tabIndex}
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class={$$props.class}
-  {role}
-  aria-label={ariaLabel}
-  on:click
-  on:keydown
-  on:keyup
-  on:focus
-  on:blur
-  on:mouseenter
-  on:mouseleave
-  on:mouseover
-  on:mouseout
-  ><circle cx="12" cy="12" r="10" /><line x1="14.31" y1="8" x2="20.05" y2="17.94" /><line
-    x1="9.69"
-    y1="8"
-    x2="21.17"
-    y2="8"
-  /><line x1="7.38" y1="12" x2="13.12" y2="2.06" /><line
-    x1="9.69"
-    y1="16"
-    x2="3.95"
-    y2="6.06"
-  /><line x1="14.31" y1="16" x2="2.83" y2="16" /><line
-    x1="16.62"
-    y1="12"
-    x2="10.88"
-    y2="21.94"
-  /></svg
->
+{#if withEvents}
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    {...$$restProps}
+    stroke={color}
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class={className}
+    {role}
+    aria-label={ariaLabel}
+    on:click
+    on:keydown
+    on:keyup
+    on:focus
+    on:blur
+    on:mouseenter
+    on:mouseleave
+    on:mouseover
+    on:mouseout
+  >
+    <circle cx="12" cy="12" r="10" /><line x1="14.31" y1="8" x2="20.05" y2="17.94" /><line
+      x1="9.69"
+      y1="8"
+      x2="21.17"
+      y2="8"
+    /><line x1="7.38" y1="12" x2="13.12" y2="2.06" /><line
+      x1="9.69"
+      y1="16"
+      x2="3.95"
+      y2="6.06"
+    /><line x1="14.31" y1="16" x2="2.83" y2="16" /><line x1="16.62" y1="12" x2="10.88" y2="21.94" />
+  </svg>
+{:else}
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    {...$$restProps}
+    stroke={color}
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class={className}
+    {role}
+    aria-label={ariaLabel}
+  >
+    <circle cx="12" cy="12" r="10" /><line x1="14.31" y1="8" x2="20.05" y2="17.94" /><line
+      x1="9.69"
+      y1="8"
+      x2="21.17"
+      y2="8"
+    /><line x1="7.38" y1="12" x2="13.12" y2="2.06" /><line
+      x1="9.69"
+      y1="16"
+      x2="3.95"
+      y2="6.06"
+    /><line x1="14.31" y1="16" x2="2.83" y2="16" /><line x1="16.62" y1="12" x2="10.88" y2="21.94" />
+  </svg>
+{/if}
 
 <!--
 @component
 [Go to docs](https://svelte-feathers.codewithshin.com)
 ## Props
 @prop export let size = ctx.size || '24';
+@prop export let withEvents: boolean = false;
 @prop export let role = ctx.role || 'img';
 @prop export let color = ctx.color || 'currentColor';
-  export let tabIndex = ctx.tabIndex || '-1';
 @prop export let ariaLabel = 'aperture';
 -->
