@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.5
+
+### Patch Changes
+
+- fix: remove fill ([`011c9cf22616da3abab74a08153163ace0f5c0a5`](https://github.com/shinokada/svelte-feathers/commit/011c9cf22616da3abab74a08153163ace0f5c0a5))
+  fix: remove tabindex
+  feat: add withEvents
+  fix: add {...$restProps}
+
 ## 1.0.4
 
 ### Patch Changes

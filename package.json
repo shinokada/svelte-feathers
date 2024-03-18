@@ -1,6 +1,6 @@
 {
   "name": "svelte-feathers",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "dist/index.js",
   "description": "Feathericon components for Sveltejs",
   "author": {
