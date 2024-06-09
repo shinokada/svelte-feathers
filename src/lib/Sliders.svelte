@@ -16,97 +16,57 @@
     ariaLabel?: string;
     class?: string;
   }
-  let className = ctx.class || '';
+  let className = ctx.class ||'';
   export { className as class };
   export let size = ctx.size || '24';
   export let withEvents: boolean = false;
   export let role = ctx.role || 'img';
   export let color = ctx.color || 'currentColor';
-  export let ariaLabel = 'sliders';
+  export let ariaLabel =  "sliders" ;
 </script>
 
 {#if withEvents}
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={size}
-    height={size}
-    viewBox="0 0 24 24"
-    {...$$restProps}
-    stroke={color}
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    class={className}
-    {role}
-    aria-label={ariaLabel}
-    on:click
-    on:keydown
-    on:keyup
-    on:focus
-    on:blur
-    on:mouseenter
-    on:mouseleave
-    on:mouseover
-    on:mouseout
-  >
-    <line x1="4" y1="21" x2="4" y2="14" /><line x1="4" y1="10" x2="4" y2="3" /><line
-      x1="12"
-      y1="21"
-      x2="12"
-      y2="12"
-    /><line x1="12" y1="8" x2="12" y2="3" /><line x1="20" y1="21" x2="20" y2="16" /><line
-      x1="20"
-      y1="12"
-      x2="20"
-      y2="3"
-    /><line x1="1" y1="14" x2="7" y2="14" /><line x1="9" y1="8" x2="15" y2="8" /><line
-      x1="17"
-      y1="16"
-      x2="23"
-      y2="16"
-    />
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width={size}
+  height={size}
+  viewBox="0 0 24 24"
+  {...$$restProps}
+  fill="none"
+  stroke={color}
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class={className}
+  {role}
+  aria-label={ariaLabel}
+  on:click
+  on:keydown
+  on:keyup
+  on:focus
+  on:blur
+  on:mouseenter
+  on:mouseleave
+  on:mouseover
+  on:mouseout>
+  <line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/>
   </svg>
 {:else}
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={size}
-    height={size}
-    viewBox="0 0 24 24"
-    {...$$restProps}
-    stroke={color}
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    class={className}
-    {role}
-    aria-label={ariaLabel}
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width={size}
+  height={size}
+  viewBox="0 0 24 24"
+  {...$$restProps}
+  fill="none"
+  stroke={color}
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class={className}
+  {role}
+  aria-label={ariaLabel}
   >
-    <line x1="4" y1="21" x2="4" y2="14" /><line x1="4" y1="10" x2="4" y2="3" /><line
-      x1="12"
-      y1="21"
-      x2="12"
-      y2="12"
-    /><line x1="12" y1="8" x2="12" y2="3" /><line x1="20" y1="21" x2="20" y2="16" /><line
-      x1="20"
-      y1="12"
-      x2="20"
-      y2="3"
-    /><line x1="1" y1="14" x2="7" y2="14" /><line x1="9" y1="8" x2="15" y2="8" /><line
-      x1="17"
-      y1="16"
-      x2="23"
-      y2="16"
-    />
+  <line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/>
   </svg>
 {/if}
-
-<!--
-@component
-[Go to docs](https://svelte-feathers.codewithshin.com)
-## Props
-@prop export let size = ctx.size || '24';
-@prop export let withEvents: boolean = false;
-@prop export let role = ctx.role || 'img';
-@prop export let color = ctx.color || 'currentColor';
-@prop export let ariaLabel = 'sliders';
--->
