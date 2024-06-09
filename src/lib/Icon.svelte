@@ -7,12 +7,23 @@
   export let ariaLabel: string = 'Icon';
 </script>
 
-<svelte:component 
-  {...$$restProps} 
+<svelte:component
+  this={icon}
+  {...$$restProps}
   {role}
-  this={icon} 
-  {size} 
-  {color} 
-  class={$$props.class} 
+  {size}
+  {color}
+  class={$$props.class}
   {ariaLabel}
 />
+
+<!--
+@component
+[Go to docs](https://svelte-feathers.codewithshin.com)
+## Props
+@prop export let icon: ComponentType;
+@prop export let size: number = 24;
+@prop export let color: string = '';
+@prop export let role: string = 'img';
+@prop export let ariaLabel: string = 'Icon';
+-->

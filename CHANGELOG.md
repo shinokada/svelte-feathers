@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.6
+
+### Patch Changes
+
+- fix: add fill="none" ([`e92d744764c4ee8c7aabd11e94b0a5fb95df7c14`](https://github.com/shinokada/svelte-feathers/commit/e92d744764c4ee8c7aabd11e94b0a5fb95df7c14))
+
 ## 1.0.5
 
 ### Patch Changes

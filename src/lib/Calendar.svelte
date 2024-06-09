@@ -16,57 +16,79 @@
     ariaLabel?: string;
     class?: string;
   }
-  let className = ctx.class ||'';
+  let className = ctx.class || '';
   export { className as class };
   export let size = ctx.size || '24';
   export let withEvents: boolean = false;
   export let role = ctx.role || 'img';
   export let color = ctx.color || 'currentColor';
-  export let ariaLabel =  "calendar" ;
+  export let ariaLabel = 'calendar';
 </script>
 
 {#if withEvents}
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  width={size}
-  height={size}
-  viewBox="0 0 24 24"
-  {...$$restProps}
-  fill="none"
-  stroke={color}
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class={className}
-  {role}
-  aria-label={ariaLabel}
-  on:click
-  on:keydown
-  on:keyup
-  on:focus
-  on:blur
-  on:mouseenter
-  on:mouseleave
-  on:mouseover
-  on:mouseout>
-  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    {...$$restProps}
+    fill="none"
+    stroke={color}
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class={className}
+    {role}
+    aria-label={ariaLabel}
+    on:click
+    on:keydown
+    on:keyup
+    on:focus
+    on:blur
+    on:mouseenter
+    on:mouseleave
+    on:mouseover
+    on:mouseout
+  >
+    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" /><line
+      x1="16"
+      y1="2"
+      x2="16"
+      y2="6"
+    /><line x1="8" y1="2" x2="8" y2="6" /><line x1="3" y1="10" x2="21" y2="10" />
   </svg>
 {:else}
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  width={size}
-  height={size}
-  viewBox="0 0 24 24"
-  {...$$restProps}
-  fill="none"
-  stroke={color}
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class={className}
-  {role}
-  aria-label={ariaLabel}
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    {...$$restProps}
+    fill="none"
+    stroke={color}
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class={className}
+    {role}
+    aria-label={ariaLabel}
   >
-  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" /><line
+      x1="16"
+      y1="2"
+      x2="16"
+      y2="6"
+    /><line x1="8" y1="2" x2="8" y2="6" /><line x1="3" y1="10" x2="21" y2="10" />
   </svg>
 {/if}
+
+<!--
+@component
+[Go to docs](https://svelte-feathers.codewithshin.com)
+## Props
+@prop export let size = ctx.size || '24';
+@prop export let withEvents: boolean = false;
+@prop export let role = ctx.role || 'img';
+@prop export let color = ctx.color || 'currentColor';
+@prop export let ariaLabel = 'calendar';
+-->
